@@ -14,8 +14,8 @@ declare module 'react-gauge-chart/dist/GaugeChart' {
     percent?: number;
     arcPadding?: number;
     arcWidth?: number;
-    arcsLength?: array;
-    colors?: Array<string>;
+    arcsLength?: number[];
+    colors?: string[];
     textColor?: string;
     needleColor?: string;
     needleBaseColor?: string;

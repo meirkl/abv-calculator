@@ -1,23 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-import Calculator from './Calculator';
-import GlobalStyle from '../services/globalStyle';
-
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-`;
+import Main from './Main';
+import Footer from './Footer';
 
 const App = () => (
   <>
-    <GlobalStyle />
-    <h1>ABV Calculator</h1>
-    <Container>
-      <Calculator />
-    </Container>
+    <Main />
+    <Footer />
   </>
 );
 
