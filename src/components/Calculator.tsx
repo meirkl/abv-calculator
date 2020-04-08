@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { yellow } from './colors';
-import { HYDROMETER_MIN_VALUE } from './constants/Constants';
+import { yellow } from '../constants/colors';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
-import { calculateAbv } from './services/functions';
+import { calculateAbv } from '../services/functions';
+import { HYDROMETER_MIN_VALUE } from '../constants';
 
 const RangeSliderWrapper = styled.div`
   width: 350px;
@@ -38,12 +38,12 @@ const Calculator = () => {
         <RangeSlider
           label="OG"
           value={og}
-          onChange={(e) => setOg(formatValue(Number(e.target.value)))}
+          onChange={e => setOg(formatValue(Number(e.target.value)))}
         />
         <RangeSlider
           label="FG"
           value={fg}
-          onChange={(e) => setFg(formatValue(Number(e.target.value)))}
+          onChange={e => setFg(formatValue(Number(e.target.value)))}
         />
       </RangeSliderWrapper>
       <Gauge abv={abv} />

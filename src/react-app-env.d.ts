@@ -22,7 +22,7 @@ declare module 'react-gauge-chart/dist/GaugeChart' {
     hideText?: boolean;
     animate?: boolean;
     animDelay?: number;
-    formatTextValue?: () => string;
+    formatTextValue?: (value: string) => string;
   }
 
   function GaugeChart(props: Props): JSX.Element;

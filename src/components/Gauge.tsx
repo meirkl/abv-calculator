@@ -1,11 +1,8 @@
 import React, { useMemo } from 'react';
 import GaugeChart from 'react-gauge-chart/dist/GaugeChart';
-import { green, red, yellow } from './colors';
-import {
-  HYDROMETER_MAX_VALUE,
-  HYDROMETER_MIN_VALUE,
-} from './constants/Constants';
-import { calculateAbv } from './services/functions';
+import { green, red, yellow } from '../constants/colors';
+import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
+import { calculateAbv } from '../services/functions';
 
 interface Props {
   abv: number;

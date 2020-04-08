@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { dark, yellow } from './colors';
-import lobster from './fonts/Lobster-Regular.ttf';
+import { dark, yellow } from '../constants/colors';
+import lobster from '../fonts/Lobster-Regular.ttf';
 
 export default createGlobalStyle`
   @font-face {

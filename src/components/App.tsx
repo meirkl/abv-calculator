@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Calculator from './Calculator';
-import GlobalStyle from './styles';
+import GlobalStyle from '../services/globalStyle';
 
 export const Container = styled.div`
   display: flex;
