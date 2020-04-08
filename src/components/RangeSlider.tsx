@@ -8,13 +8,13 @@ const StyledRangeSlider = styled.fieldset`
   border: 0;
   input {
     width: 100%;
-    -webkit-appearance: none;
     height: 5px;
     border-radius: 5px;
     background: ${green};
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
+    -webkit-appearance: none;
     :hover {
       opacity: 1;
     }
@@ -29,10 +29,11 @@ const StyledRangeSlider = styled.fieldset`
   }
   output {
     display: block;
-    color: ${green};
-    text-align: center;
-    font-size: 1.2rem;
     padding: 10px;
+    color: ${green};
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
   }
 `;
 
@@ -45,7 +46,7 @@ interface Props {
 const RangeSlider = ({ label, value, onChange }: Props) => (
   <StyledRangeSlider>
     <output>
-      {label} &ndash; {value}
+      {label} &ndash; {value.toFixed(3)}
     </output>
     <input
       aria-label={label}

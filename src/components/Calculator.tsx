@@ -36,12 +36,12 @@ const Calculator = () => {
     <>
       <RangeSliderWrapper>
         <RangeSlider
-          label="OG"
+          label="og"
           value={og}
           onChange={e => setOg(formatValue(Number(e.target.value)))}
         />
         <RangeSlider
-          label="FG"
+          label="fg"
           value={fg}
           onChange={e => setFg(formatValue(Number(e.target.value)))}
         />
