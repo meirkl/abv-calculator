@@ -12,17 +12,20 @@ const StyledFooter = styled.footer`
   > div {
     margin: 8px 0;
   }
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: ${light};
+`;
+
+const Link = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${light};
+  > * {
+    margin-right: 3px;
   }
 `;
 
 const StyledGithubIcon = styled(GithubIcon)`
   width: 20px;
-  margin-right: 3px;
   fill: ${light};
 `;
 
@@ -30,14 +33,14 @@ const Footer = () => (
   <StyledFooter>
     <div>&copy; Copyright 2020, Meir Keller</div>
     <div>
-      <a
+      <Link
         href="https://github.com/meirkl/abv-calculator"
         target="_blank"
         rel="noopener noreferrer"
       >
         <StyledGithubIcon />
         abv-calculator
-      </a>
+      </Link>
     </div>
   </StyledFooter>
 );

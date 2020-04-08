@@ -3,12 +3,10 @@ import styled from 'styled-components';
 import Calculator from './Calculator';
 
 const StyledMain = styled.main`
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 90vh;
 `;
 
 const Main = () => (
