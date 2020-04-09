@@ -30,7 +30,7 @@ const Calculator = () => {
     <>
       <Gauge abv={abv} />
       <Result>
-        <span>ABV</span> {abv}%
+        <span>ABV</span>&nbsp;{`${abv}%`}
       </Result>
       <RangeSliderWrapper>
         <RangeSlider

@@ -17,7 +17,7 @@ const Gauge = ({ abv }: Props) => {
   return (
     <GaugeChart
       id="abv-gauge"
-      style={{ height: '100px', margin: '25px' }}
+      style={{ height: '100px', margin: '15px 0' }}
       nrOfLevels={20}
       colors={[secondary, danger]}
       arcWidth={0.2}

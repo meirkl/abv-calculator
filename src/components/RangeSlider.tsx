@@ -45,9 +45,7 @@ interface Props {
 
 const RangeSlider = ({ label, value, onChange }: Props) => (
   <StyledRangeSlider>
-    <output>
-      {label} &ndash; {value.toFixed(3)}
-    </output>
+    <output>{`${label} \u2013 ${value.toFixed(3)}`}</output>
     <input
       aria-label={label}
       type="range"

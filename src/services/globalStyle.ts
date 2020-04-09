@@ -4,7 +4,7 @@ import lobster from '../fonts/Lobster-Regular.ttf';
 import roboto from '../fonts/Roboto-Regular.ttf';
 
 export default createGlobalStyle`
-  @font-face {
+   @font-face {
     font-family: 'Lobster';
     src: url(${lobster});
     font-style: normal;
@@ -16,10 +16,16 @@ export default createGlobalStyle`
     font-style: normal;
     font-weight: 400;
   }
+  * {
+    box-sizing: border-box;
+  }
+  html,
   body {
-    font-family: 'Lobster', cursive;
     margin: 0;
     padding: 0;
+  }
+  body {
+    font-family: 'Lobster', cursive;
     background: ${dark};
     color: ${primary};
     font-size: 16px;

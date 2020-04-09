@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Calculator from './Calculator';
 
 const StyledMain = styled.main`
-  height: 90vh;
+  height: 87vh;
   display: flex;
   flex-direction: column;
   align-items: center;
