@@ -23,7 +23,9 @@ const Calculator = () => {
   const [abv, setAbv] = useState(0);
 
   useEffect(() => {
-    setAbv(formatValue(calculateAbv(og, fg), 2));
+    if (fg <= og) {
+      setAbv(formatValue(calculateAbv(og, fg), 2));
+    }
   }, [og, fg]);
 
   return (
