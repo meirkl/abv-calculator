@@ -14,12 +14,12 @@ const StyledRangeSlider = styled.fieldset`
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
-    -webkit-appearance: none;
+    appearance: none;
     :hover {
       opacity: 1;
     }
     ::-webkit-slider-thumb {
-      -webkit-appearance: none;
+      appearance: none;
       width: 30px;
       height: 30px;
       border-radius: 50%;
