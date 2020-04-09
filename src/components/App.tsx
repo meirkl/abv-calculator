@@ -4,11 +4,12 @@ import Footer from './Footer';
 
 const App = () => {
   useEffect(() => {
-    if (
-      'orientation' in window.screen &&
-      window.screen.orientation.type === 'landscape-primary'
-    ) {
-      window.screen.orientation.lock('landscape-primary');
+    if ('orientation' in window.screen) {
+      (async () => {
+        try {
+          await window.screen.orientation.lock('portrait-primary');
+        } catch {}
+      })();
     }
   }, []);
 
