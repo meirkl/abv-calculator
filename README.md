@@ -1,3 +1,7 @@
+# `Alcohol By Volume ABV Calculator`
+
+Finds ABV based on gravity change. If you took an original gravity reading (or had estimated OG), and also took a final gravity (FG) reading prior to adding priming sugar at bottling you can find out your batch's alcohol by volume ABV.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
