@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import GaugeChart from 'react-gauge-chart/dist/GaugeChart';
-import { green, red, yellow } from '../constants/colors';
+import { secondary, danger, primary } from '../constants/colors';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 import { calculateAbv } from '../services/functions';
 
@@ -18,11 +18,11 @@ const Gauge = ({ abv }: Props) => {
     <GaugeChart
       id="abv-gauge"
       style={{ height: '100px', margin: '25px' }}
-      nrOfLevels={5}
-      colors={[green, red]}
-      arcWidth={0.3}
-      needleColor={yellow}
-      needleBaseColor={yellow}
+      nrOfLevels={20}
+      colors={[secondary, danger]}
+      arcWidth={0.2}
+      needleColor={primary}
+      needleBaseColor={primary}
       percent={abv / maxAbv}
       hideText={true}
     />

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { yellow } from '../constants/colors';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
-import { calculateAbv } from '../services/functions';
+import { calculateAbv, formatValue } from '../services/functions';
 import { HYDROMETER_MIN_VALUE } from '../constants';
 
 const RangeSliderWrapper = styled.div`
@@ -11,17 +10,12 @@ const RangeSliderWrapper = styled.div`
 `;
 
 const Result = styled.div`
-  color: ${yellow};
-  font-size: 60px;
+  font-size: 3.75rem;
   margin: 15px 0;
   span {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 `;
-
-const formatValue = (value: number, fractionDigits: number = 3): number => {
-  return Number(value.toFixed(fractionDigits));
-};
 
 const Calculator = () => {
   const [og, setOg] = useState(HYDROMETER_MIN_VALUE);
@@ -34,6 +28,10 @@ const Calculator = () => {
 
   return (
     <>
+      <Gauge abv={abv} />
+      <Result>
+        <span>ABV</span> {abv}%
+      </Result>
       <RangeSliderWrapper>
         <RangeSlider
           label="og"
@@ -46,10 +44,6 @@ const Calculator = () => {
           onChange={e => setFg(formatValue(Number(e.target.value)))}
         />
       </RangeSliderWrapper>
-      <Gauge abv={abv} />
-      <Result>
-        <span>ABV</span> {abv}%
-      </Result>
     </>
   );
 };

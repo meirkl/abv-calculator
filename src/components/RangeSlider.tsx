@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { green, yellow } from '../constants/colors';
+import { secondary, primary } from '../constants/colors';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 
 const StyledRangeSlider = styled.fieldset`
@@ -10,7 +10,7 @@ const StyledRangeSlider = styled.fieldset`
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background: ${green};
+    background: ${secondary};
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
@@ -23,14 +23,14 @@ const StyledRangeSlider = styled.fieldset`
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      background: ${yellow};
+      background: ${primary};
       cursor: pointer;
     }
   }
   output {
     display: block;
     padding: 10px;
-    color: ${green};
+    color: ${secondary};
     font-size: 1.2rem;
     text-align: center;
     text-transform: uppercase;

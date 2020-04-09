@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   height: 10vh;
   color: ${light};
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
   > div {
     margin: 8px 0;

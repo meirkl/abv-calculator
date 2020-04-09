@@ -1,5 +1,5 @@
-export const green = '#209E48';
-export const yellow = '#D1B745';
-export const red = '#A12C2A';
-export const dark = '#404040';
-export const light = '#d0d0d0';
+export const primary = '#f1c40f';
+export const secondary = '#22a6b3';
+export const danger = '#c0392b';
+export const dark = '#1e2127';
+export const light = '#ecf0f1';
