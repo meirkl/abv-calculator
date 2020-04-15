@@ -31,7 +31,7 @@ const StyledGithubIcon = styled(GithubIcon)`
 
 const Footer = () => (
   <StyledFooter>
-    <div>&copy; Copyright 2020, Meir Keller</div>
+    <div>Copyright &copy; 2020, Meir Keller</div>
     <div>
       <Link
         href="https://github.com/meirkl/abv-calculator"
