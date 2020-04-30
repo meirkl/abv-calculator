@@ -43,7 +43,7 @@ interface Props {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const RangeSlider = ({ label, value, onChange }: Props) => (
+const RangeSlider = ({ label, value, onChange }: Props): React.ReactElement => (
   <StyledRangeSlider>
     <output>{`${label} \u2013 ${value.toFixed(3)}`}</output>
     <input

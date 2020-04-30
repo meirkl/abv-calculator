@@ -8,7 +8,7 @@ interface Props {
   abv: number;
 }
 
-const Gauge = ({ abv }: Props) => {
+const Gauge = ({ abv }: Props): React.ReactElement => {
   const maxAbv = useMemo(
     () => calculateAbv(HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE),
     [],

@@ -17,7 +17,7 @@ const Result = styled.div`
   }
 `;
 
-const Calculator = () => {
+const Calculator = (): React.ReactElement => {
   const [og, setOg] = useState(HYDROMETER_MIN_VALUE);
   const [fg, setFg] = useState(HYDROMETER_MIN_VALUE);
   const [abv, setAbv] = useState(0);

@@ -29,7 +29,7 @@ const StyledGithubIcon = styled(GithubIcon)`
   fill: ${light};
 `;
 
-const Footer = () => (
+const Footer = (): React.ReactElement => (
   <StyledFooter>
     <div>Copyright &copy; 2020, Meir Keller</div>
     <div>

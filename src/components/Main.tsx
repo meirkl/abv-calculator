@@ -9,7 +9,7 @@ const StyledMain = styled.main`
   align-items: center;
 `;
 
-const Main = () => (
+const Main = (): React.ReactElement => (
   <StyledMain>
     <h1>ABV Calculator</h1>
     <Calculator />

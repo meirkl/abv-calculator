@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Main from './Main';
 import Footer from './Footer';
 
-const App = () => {
+const App = (): React.ReactElement => {
   useEffect(() => {
     if ('orientation' in window.screen) {
       (async () => {
