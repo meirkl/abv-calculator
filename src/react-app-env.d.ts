@@ -25,7 +25,7 @@ declare module 'react-gauge-chart/dist/GaugeChart' {
     formatTextValue?: (value: string) => string;
   }
 
-  function GaugeChart(props: Props): JSX.Element;
+  function GaugeChart(props: Props): React.ReactElement;
 
   export = GaugeChart;
 }
