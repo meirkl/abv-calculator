@@ -2,6 +2,7 @@
   "name": "abv-calculator",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "homepage": "http://meirkl.github.io/abv-calculator",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
