@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { secondary, primary } from '../constants/colors';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
+import { primary, secondary } from '../constants/colors';
 
 type Props = {
   label: string;
