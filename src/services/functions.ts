@@ -10,10 +10,3 @@ export function calculateAbvAlternate(og: number, fg: number) {
 export function formatValue(value: number, fractionDigits: number = 3) {
   return Number(value.toFixed(fractionDigits));
 }
-
-export function pointInRect(
-  rect: DOMRect,
-  { x, y }: { x: number; y: number },
-): boolean {
-  return x > rect.left && x < rect.right && y > rect.top && y < rect.bottom;
-}
