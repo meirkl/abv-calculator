@@ -3,6 +3,27 @@ import styled from 'styled-components';
 import { secondary, primary } from '../constants/colors';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 
+interface Props {
+  label: string;
+  value: number;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}
+
+const RangeSlider = ({ label, value, onChange }: Props): React.ReactElement => (
+  <StyledRangeSlider>
+    <output>{`${label} \u2013 ${value.toFixed(3)}`}</output>
+    <input
+      aria-label={label}
+      type="range"
+      min={HYDROMETER_MIN_VALUE}
+      max={HYDROMETER_MAX_VALUE}
+      step={0.001}
+      value={value}
+      onChange={onChange}
+    />
+  </StyledRangeSlider>
+);
+
 const StyledRangeSlider = styled.fieldset`
   padding: 12px 0px;
   border: 0;
@@ -36,26 +57,5 @@ const StyledRangeSlider = styled.fieldset`
     text-transform: uppercase;
   }
 `;
-
-interface Props {
-  label: string;
-  value: number;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
-
-const RangeSlider = ({ label, value, onChange }: Props): React.ReactElement => (
-  <StyledRangeSlider>
-    <output>{`${label} \u2013 ${value.toFixed(3)}`}</output>
-    <input
-      aria-label={label}
-      type="range"
-      min={HYDROMETER_MIN_VALUE}
-      max={HYDROMETER_MAX_VALUE}
-      step={0.001}
-      value={value}
-      onChange={onChange}
-    />
-  </StyledRangeSlider>
-);
 
 export default RangeSlider;

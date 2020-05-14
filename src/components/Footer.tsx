@@ -3,6 +3,22 @@ import styled from 'styled-components';
 import { light } from '../constants/colors';
 import { ReactComponent as GithubIcon } from '../media/github.svg';
 
+const Footer = (): React.ReactElement => (
+  <StyledFooter>
+    <div>Copyright &copy; 2020, Meir Keller</div>
+    <div>
+      <Link
+        href="https://github.com/meirkl/abv-calculator"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <StyledGithubIcon />
+        abv-calculator
+      </Link>
+    </div>
+  </StyledFooter>
+);
+
 const StyledFooter = styled.footer`
   height: 10vh;
   color: ${light};
@@ -28,21 +44,4 @@ const StyledGithubIcon = styled(GithubIcon)`
   width: 20px;
   fill: ${light};
 `;
-
-const Footer = (): React.ReactElement => (
-  <StyledFooter>
-    <div>Copyright &copy; 2020, Meir Keller</div>
-    <div>
-      <Link
-        href="https://github.com/meirkl/abv-calculator"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <StyledGithubIcon />
-        abv-calculator
-      </Link>
-    </div>
-  </StyledFooter>
-);
-
 export default Footer;

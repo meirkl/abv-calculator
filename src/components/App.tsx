@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Main from './Main';
 import Footer from './Footer';
+import AbvEquationContextProvider from '../context/AbvEquation';
 
 const App = (): React.ReactElement => {
   useEffect(() => {
@@ -14,10 +15,10 @@ const App = (): React.ReactElement => {
   }, []);
 
   return (
-    <>
+    <AbvEquationContextProvider>
       <Main />
       <Footer />
-    </>
+    </AbvEquationContextProvider>
   );
 };
 

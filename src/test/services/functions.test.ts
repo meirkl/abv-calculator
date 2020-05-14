@@ -1,18 +1,22 @@
-import { calculateAbv, formatValue } from '../../services/functions';
+import { calculateAbvAlternate, formatValue } from '../../services/functions';
 import { HYDROMETER_MIN_VALUE, HYDROMETER_MAX_VALUE } from '../../constants';
 
 it('abv calculation for min value', () => {
-  expect(calculateAbv(HYDROMETER_MIN_VALUE, HYDROMETER_MIN_VALUE)).toBe(0);
+  expect(
+    calculateAbvAlternate(HYDROMETER_MIN_VALUE, HYDROMETER_MIN_VALUE),
+  ).toBe(0);
 });
 
 it('abv calculation for max value', () => {
-  expect(calculateAbv(HYDROMETER_MAX_VALUE, HYDROMETER_MAX_VALUE)).toBe(0);
+  expect(
+    calculateAbvAlternate(HYDROMETER_MAX_VALUE, HYDROMETER_MAX_VALUE),
+  ).toBe(0);
 });
 
 it('abv calculation for max abv', () => {
-  expect(calculateAbv(HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE)).toBe(
-    27.483590342200642,
-  );
+  expect(
+    calculateAbvAlternate(HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE),
+  ).toBe(27.483590342200642);
 });
 
 it('formatted default value', () => {
