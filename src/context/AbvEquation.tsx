@@ -4,22 +4,20 @@ import {
   calculateAbvStandard,
 } from '../services/functions';
 
-interface Props {
-  children: React.ReactNode;
-}
+type Props = { children: React.ReactNode };
 
 type EquationMode = 'standard' | 'alternate';
 
-interface ContextProps {
+type ContextProps = {
   equation: EquationMode;
   changeHandler: () => void;
   calculateAbv: (og: number, fg: number) => number;
-}
+};
 
-export const AbvEquationContext = createContext<ContextProps>({
+const AbvEquationContext = createContext<ContextProps>({
   equation: 'standard',
   changeHandler: () => {},
-  calculateAbv: (og: number, fg: number) => 0,
+  calculateAbv: () => 0,
 });
 
 export const useAbvEquationContext = (): ContextProps =>

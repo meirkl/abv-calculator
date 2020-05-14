@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { secondary, primary } from '../constants/colors';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 
-interface Props {
+type Props = {
   label: string;
   value: number;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
-}
+};
 
 const RangeSlider = ({ label, value, onChange }: Props): React.ReactElement => (
   <StyledRangeSlider>

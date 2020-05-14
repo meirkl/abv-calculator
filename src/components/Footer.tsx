@@ -44,4 +44,5 @@ const StyledGithubIcon = styled(GithubIcon)`
   width: 20px;
   fill: ${light};
 `;
+
 export default Footer;

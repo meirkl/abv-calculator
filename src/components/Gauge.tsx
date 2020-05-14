@@ -4,9 +4,7 @@ import { secondary, danger, primary } from '../constants/colors';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 import { useAbvEquationContext } from '../context/AbvEquation';
 
-interface Props {
-  abv: number;
-}
+type Props = { abv: number };
 
 const Gauge = ({ abv }: Props): React.ReactElement => {
   const { calculateAbv } = useAbvEquationContext();
