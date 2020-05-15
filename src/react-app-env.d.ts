@@ -3,8 +3,9 @@
 declare module '*.ttf';
 
 declare module 'react-gauge-chart/dist/GaugeChart' {
-  var React = require('react');
-  interface Props {
+  import React from 'react';
+
+  type Props = {
     id: string;
     className?: string;
     style?: React.CSSProperties;
@@ -23,9 +24,19 @@ declare module 'react-gauge-chart/dist/GaugeChart' {
     animate?: boolean;
     animDelay?: number;
     formatTextValue?: (value: string) => string;
-  }
+  };
 
-  function GaugeChart(props: Props): React.ReactElement;
+  export default function GaugeChart(props: Props): React.ReactElement;
+}
 
-  export = GaugeChart;
+declare module 'react-context-devtool' {
+  import React from 'react';
+
+  type Props<T> = {
+    id: string;
+    displayName: string;
+    context: React.Context<T>;
+  };
+
+  export default function ContextDevTool<T>(props: Props): React.ReactElement;
 }
