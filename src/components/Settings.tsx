@@ -92,7 +92,7 @@ const CheckBox = styled.div`
 `;
 
 const StyledSettingsCommon = css`
-  position: absolute;
+  position: fixed;
   top: calc(80vh / 5);
   left: 0;
   background-color: ${secondaryDark};
