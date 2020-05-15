@@ -116,7 +116,7 @@ const StyledSettingsIcon = styled(SettingsIcon)`
 const StyledSettings = styled.div<{ showMenu: boolean }>`
   ${StyledSettingsCommon};
   transform: ${props =>
-    props.showMenu ? 'translateX(0%)' : 'translateX(-100%)'};
+    props.showMenu ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 15px 25px;
   h5 {
