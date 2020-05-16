@@ -110,6 +110,7 @@ const SettingsDrawerButton = styled.div`
 
 const StyledSettingsIcon = styled(SettingsIcon)`
   width: 35px;
+  height: 35px;
   fill: ${light};
 `;
 
