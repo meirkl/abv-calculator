@@ -1,7 +1,5 @@
 /// <reference types="react-scripts" />
 
-declare module '*.ttf';
-
 declare module 'react-gauge-chart' {
   import React from 'react';
 
