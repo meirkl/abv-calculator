@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import GaugeChart from 'react-gauge-chart/dist/GaugeChart';
+import GaugeChart from 'react-gauge-chart';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 import { danger, primary, secondary } from '../constants/colors';
 import { useAbvEquationContext } from '../context/AbvEquation';

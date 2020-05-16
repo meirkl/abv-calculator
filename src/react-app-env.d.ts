@@ -2,7 +2,7 @@
 
 declare module '*.ttf';
 
-declare module 'react-gauge-chart/dist/GaugeChart' {
+declare module 'react-gauge-chart' {
   import React from 'react';
 
   type Props = {
