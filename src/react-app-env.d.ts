@@ -22,6 +22,7 @@ declare module 'react-gauge-chart' {
     animate?: boolean;
     animDelay?: number;
     formatTextValue?: (value: string) => string;
+    fontSize?: string;
   };
 
   export default function GaugeChart(props: Props): React.ReactElement;
@@ -36,5 +37,7 @@ declare module 'react-context-devtool' {
     context: React.Context<T>;
   };
 
-  export default function ContextDevTool<T>(props: Props): React.ReactElement;
+  export default function ContextDevTool<T>(
+    props: Props<T>,
+  ): React.ReactElement;
 }
