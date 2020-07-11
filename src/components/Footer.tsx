@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { light } from '../constants/colors';
 import { ReactComponent as GithubIcon } from '../media/github.svg';
 
-const Footer = (): React.ReactElement => (
+const Footer: React.FC = () => (
   <StyledFooter>
     <div>Copyright &copy; 2020, Meir Keller</div>
     <div>

@@ -1,5 +1,7 @@
 /// <reference types="react-scripts" />
 
+declare module '*.woff2';
+
 declare module 'react-context-devtool' {
   import React from 'react';
 

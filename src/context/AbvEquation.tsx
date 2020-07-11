@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import {
   calculateAbvAlternate,
   calculateAbvStandard,
-} from '../services/functions';
+} from '../utils/functions';
 import ContextDevTool from 'react-context-devtool';
 
 type Props = { children: React.ReactNode };

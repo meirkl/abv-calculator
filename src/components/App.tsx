@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import Main from './Main';
 
-const App = (): React.ReactElement => {
+const App: React.FC = () => {
   return (
     <>
       <Main />

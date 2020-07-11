@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 import { primary, secondary } from '../constants/colors';
@@ -9,7 +9,7 @@ type Props = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const RangeSlider = ({ label, value, onChange }: Props): React.ReactElement => (
+const RangeSlider: React.FC<Props> = memo(({ label, value, onChange }) => (
   <StyledRangeSlider>
     <output>{`${label} \u2013 ${value.toFixed(3)}`}</output>
     <input
@@ -22,7 +22,7 @@ const RangeSlider = ({ label, value, onChange }: Props): React.ReactElement => (
       onChange={onChange}
     />
   </StyledRangeSlider>
-);
+));
 
 const StyledRangeSlider = styled.fieldset`
   padding: 12px 0px;

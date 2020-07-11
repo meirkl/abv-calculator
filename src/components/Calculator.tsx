@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { HYDROMETER_MIN_VALUE } from '../constants';
 import { useAbvEquationContext } from '../context/AbvEquation';
-import { formatValue } from '../services/functions';
+import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
 

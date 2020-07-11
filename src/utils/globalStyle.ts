@@ -13,8 +13,4 @@ export default createGlobalStyle`
     color: ${primary};
     font-size: 16px;
   }
-  h1 {
-    font-size: 2.5rem;
-    margin: 20px 0;
-  }
 `;

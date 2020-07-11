@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, memo } from 'react';
 import GaugeChart from 'react-gauge-chart';
 import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 import { danger, primary, secondary } from '../constants/colors';
@@ -6,7 +6,7 @@ import { useAbvEquationContext } from '../context/AbvEquation';
 
 type Props = { abv: number };
 
-const Gauge = ({ abv }: Props): React.ReactElement => {
+const Gauge: React.FC<Props> = memo(({ abv }) => {
   const { calculateAbv } = useAbvEquationContext();
 
   const maxAbv = useMemo(
@@ -27,6 +27,6 @@ const Gauge = ({ abv }: Props): React.ReactElement => {
       hideText={true}
     />
   );
-};
+});
 
 export default Gauge;

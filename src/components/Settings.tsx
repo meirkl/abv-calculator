@@ -10,7 +10,7 @@ import { useAbvEquationContext } from '../context/AbvEquation';
 import useOnClickOutside from '../hooks/useOnClickOutside';
 import { ReactComponent as SettingsIcon } from '../media/settings.svg';
 
-const Settings = () => {
+const Settings: React.FC = () => {
   const wrapperRef = useRef(null);
 
   const { equation, changeHandler } = useAbvEquationContext();
