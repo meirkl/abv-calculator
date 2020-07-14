@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/abv-calculator/static/js/main.cc7803a1.chunk.js",
-    "main.js.map": "/abv-calculator/static/js/main.cc7803a1.chunk.js.map",
+    "main.js": "/abv-calculator/static/js/main.bc3cca5d.chunk.js",
+    "main.js.map": "/abv-calculator/static/js/main.bc3cca5d.chunk.js.map",
     "runtime-main.js": "/abv-calculator/static/js/runtime-main.7bd043cd.js",
     "runtime-main.js.map": "/abv-calculator/static/js/runtime-main.7bd043cd.js.map",
     "static/css/2.156fe21f.chunk.css": "/abv-calculator/static/css/2.156fe21f.chunk.css",
     "static/js/2.2aa0ce5a.chunk.js": "/abv-calculator/static/js/2.2aa0ce5a.chunk.js",
     "static/js/2.2aa0ce5a.chunk.js.map": "/abv-calculator/static/js/2.2aa0ce5a.chunk.js.map",
     "index.html": "/abv-calculator/index.html",
-    "precache-manifest.0f73c69d6a7042a53fb1820bdc71c432.js": "/abv-calculator/precache-manifest.0f73c69d6a7042a53fb1820bdc71c432.js",
+    "precache-manifest.6bcfc9c8a90d65b3b88fa0351628bc90.js": "/abv-calculator/precache-manifest.6bcfc9c8a90d65b3b88fa0351628bc90.js",
     "service-worker.js": "/abv-calculator/service-worker.js",
     "static/css/2.156fe21f.chunk.css.map": "/abv-calculator/static/css/2.156fe21f.chunk.css.map",
     "static/js/2.2aa0ce5a.chunk.js.LICENSE.txt": "/abv-calculator/static/js/2.2aa0ce5a.chunk.js.LICENSE.txt",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.7bd043cd.js",
     "static/css/2.156fe21f.chunk.css",
     "static/js/2.2aa0ce5a.chunk.js",
-    "static/js/main.cc7803a1.chunk.js"
+    "static/js/main.bc3cca5d.chunk.js"
   ]
 }
