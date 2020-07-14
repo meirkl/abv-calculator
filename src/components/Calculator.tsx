@@ -6,7 +6,7 @@ import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
 
-const Calculator = (): React.ReactElement => {
+const Calculator: React.FC = () => {
   const { calculateAbv } = useAbvEquationContext();
   const [og, setOg] = useState(HYDROMETER_MIN_VALUE);
   const [fg, setFg] = useState(HYDROMETER_MIN_VALUE);
