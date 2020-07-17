@@ -21,7 +21,8 @@ const Calculator: React.FC = () => {
     <>
       <Gauge abv={abv} />
       <Result>
-        <span>ABV</span>&nbsp;{`${abv}%`}
+        <span>ABV</span>
+        {abv}%
       </Result>
       <RangeSliderWrapper>
         <RangeSlider
@@ -47,6 +48,7 @@ const Result = styled.div`
   font-size: 3.75rem;
   margin: 15px 0;
   span {
+    margin-right: 0.7rem;
     font-size: 2.5rem;
   }
 `;

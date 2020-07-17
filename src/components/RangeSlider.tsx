@@ -11,7 +11,10 @@ type Props = {
 
 const RangeSlider: React.FC<Props> = memo(({ label, value, onChange }) => (
   <StyledRangeSlider>
-    <output>{`${label}: ${value.toFixed(3)}`}</output>
+    <output>
+      <span>{label}</span>
+      {value.toFixed(3)}
+    </output>
     <input
       aria-label={label}
       type="range"
@@ -50,11 +53,14 @@ const StyledRangeSlider = styled.fieldset`
   }
   output {
     display: block;
-    padding: 10px;
     color: ${secondary};
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     text-transform: uppercase;
+    span {
+      margin-right: 0.4rem;
+      font-size: 1rem;
+    }
   }
 `;
 
