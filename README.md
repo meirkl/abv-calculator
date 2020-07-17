@@ -6,6 +6,8 @@ Finds ABV based on gravity change. If you took an original gravity reading (or h
 
 ## Screenshots
 
-<img src="./src/media/screenshot.jpg" alt="ABV Calculator screenshot" height="500px">  
-<img src="./src/media/screenshot-alternate.jpg" alt="ABV Calculator screenshot alternate" height="500px">   
-<img src="./src/media/screenshot-standard.jpg" alt="ABV Calculator screenshot standard" height="500px">   
+<img src="./src/media/demo1.jpg" alt="ABV Calculator screenshot standard" height="500px">  
+<img src="./src/media/demo2.jpg" alt="ABV Calculator screenshot standard with drawer open" height="500px">   
+<img src="./src/media/demo3.jpg" alt="ABV Calculator screenshot alternate" height="500px">   
+<img src="./src/media/demo4.jpg" alt="ABV Calculator screenshot alternate with drawer open" height="500px">   
+
