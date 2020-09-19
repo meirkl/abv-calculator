@@ -11,7 +11,7 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/calculator" component={AbvCalculatorPage} />
           <Route path="/converter" component={BrixConverterPage} />
-          <Redirect to="/calculator" />
+          <Route render={() => <Redirect to="/calculator" />} />
         </Switch>
         <Tabs />
       </BrowserRouter>

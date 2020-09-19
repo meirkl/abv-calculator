@@ -48,12 +48,6 @@ const Tab = styled.li<{ active: boolean }>`
     transition: ${props =>
       props.active ? 'transform 300ms ease-in' : 'transform 0ms ease-out'};
   }
-
-  /* :after {
-    transform: scaleX(1);
-    transform-origin: 0% 50%;
-    transition: transform 300ms ease-in;
-  } */
 `;
 
 const StyledNavLink = styled(NavLink)`
