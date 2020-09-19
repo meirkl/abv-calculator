@@ -49,7 +49,7 @@ const StyledTabs = styled.ul`
 const Tab = styled.li<{ active: boolean }>`
   transition: all 1s ease;
   color: ${props => !props.active && light};
-  border-bottom: ${props => props.active && '4px solid'};
+  border-bottom: ${props => props.active ? '4px solid' : '4px solid transparent'};
   font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
