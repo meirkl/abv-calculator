@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import { HYDROMETER_MIN_VALUE } from '../constants';
+import { HYDROMETER_MIN_VALUE, HYDROMETER_MAX_VALUE } from '../constants';
 import { useAbvEquationContext } from '../context/AbvEquation';
 import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
@@ -8,11 +8,11 @@ import RangeSlider from './RangeSlider';
 
 const Calculator: React.FC = () => {
   const { calculateAbv } = useAbvEquationContext();
-  const [og, setOg] = useState(HYDROMETER_MIN_VALUE);
-  const [fg, setFg] = useState(HYDROMETER_MIN_VALUE);
-  const [abv, setAbv] = useState(0);
+  const [og, setOg] = React.useState(HYDROMETER_MIN_VALUE);
+  const [fg, setFg] = React.useState(HYDROMETER_MIN_VALUE);
+  const [abv, setAbv] = React.useState(0);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const result = formatValue(calculateAbv(og, fg), 2);
     setAbv(result > 0 ? result : 0);
   }, [og, fg, calculateAbv]);
@@ -28,11 +28,17 @@ const Calculator: React.FC = () => {
         <RangeSlider
           label="og"
           value={og}
+          min={HYDROMETER_MIN_VALUE}
+          max={HYDROMETER_MAX_VALUE}
+          step={0.001}
           onChange={e => setOg(formatValue(Number(e.target.value)))}
         />
         <RangeSlider
           label="fg"
           value={fg}
+          min={HYDROMETER_MIN_VALUE}
+          max={HYDROMETER_MAX_VALUE}
+          step={0.001}
           onChange={e => setFg(formatValue(Number(e.target.value)))}
         />
       </RangeSliderWrapper>

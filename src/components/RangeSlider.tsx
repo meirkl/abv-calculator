@@ -1,31 +1,36 @@
 import React, { memo } from 'react';
 import styled from 'styled-components';
-import { HYDROMETER_MAX_VALUE, HYDROMETER_MIN_VALUE } from '../constants';
 import { primary, secondary } from '../constants/colors';
 
 type Props = {
   label: string;
   value: number;
+  min: number;
+  max: number;
+  step: number;
+  fractionDigits?: number;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const RangeSlider: React.FC<Props> = memo(({ label, value, onChange }) => (
-  <StyledRangeSlider>
-    <output>
-      <span>{label}</span>
-      {value.toFixed(3)}
-    </output>
-    <input
-      aria-label={label}
-      type="range"
-      min={HYDROMETER_MIN_VALUE}
-      max={HYDROMETER_MAX_VALUE}
-      step={0.001}
-      value={value}
-      onChange={onChange}
-    />
-  </StyledRangeSlider>
-));
+const RangeSlider: React.FC<Props> = memo(
+  ({ label, value, min, max, step, fractionDigits = 3, onChange }) => (
+    <StyledRangeSlider>
+      <output>
+        <span>{label}</span>
+        {value.toFixed(fractionDigits)}
+      </output>
+      <input
+        aria-label={label}
+        type="range"
+        min={min}
+        max={max}
+        step={step}
+        value={value}
+        onChange={onChange}
+      />
+    </StyledRangeSlider>
+  ),
+);
 
 const StyledRangeSlider = styled.fieldset`
   padding: 12px 0px;
