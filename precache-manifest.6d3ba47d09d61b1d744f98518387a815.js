@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6b5db3ecf6a2591c8f6c34c6ef1baf6a",
+    "revision": "a5f070a09cc6ea2daa0d1c4d0f20f734",
     "url": "/abv-calculator/index.html"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abv-calculator/static/js/5.b7fd9bff.chunk.js"
   },
   {
-    "revision": "10b4e21615757ad93c36",
-    "url": "/abv-calculator/static/js/main.8f744323.chunk.js"
+    "revision": "30f5d168f883d992e418",
+    "url": "/abv-calculator/static/js/main.dff4c2a4.chunk.js"
   },
   {
     "revision": "65334d75f9b9157dffec",
