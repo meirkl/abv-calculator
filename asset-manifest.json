@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/abv-calculator/static/js/main.1663986c.chunk.js",
-    "main.js.map": "/abv-calculator/static/js/main.1663986c.chunk.js.map",
-    "runtime-main.js": "/abv-calculator/static/js/runtime-main.25f889a6.js",
-    "runtime-main.js.map": "/abv-calculator/static/js/runtime-main.25f889a6.js.map",
+    "main.js": "/abv-calculator/static/js/main.e1902ea3.chunk.js",
+    "main.js.map": "/abv-calculator/static/js/main.e1902ea3.chunk.js.map",
+    "runtime-main.js": "/abv-calculator/static/js/runtime-main.ee68ff1a.js",
+    "runtime-main.js.map": "/abv-calculator/static/js/runtime-main.ee68ff1a.js.map",
     "static/js/2.0c798f27.chunk.js": "/abv-calculator/static/js/2.0c798f27.chunk.js",
     "static/js/2.0c798f27.chunk.js.map": "/abv-calculator/static/js/2.0c798f27.chunk.js.map",
     "static/css/3.156fe21f.chunk.css": "/abv-calculator/static/css/3.156fe21f.chunk.css",
     "static/js/3.423975c0.chunk.js": "/abv-calculator/static/js/3.423975c0.chunk.js",
     "static/js/3.423975c0.chunk.js.map": "/abv-calculator/static/js/3.423975c0.chunk.js.map",
-    "static/js/4.3ca23dc1.chunk.js": "/abv-calculator/static/js/4.3ca23dc1.chunk.js",
-    "static/js/4.3ca23dc1.chunk.js.map": "/abv-calculator/static/js/4.3ca23dc1.chunk.js.map",
+    "static/js/4.36159861.chunk.js": "/abv-calculator/static/js/4.36159861.chunk.js",
+    "static/js/4.36159861.chunk.js.map": "/abv-calculator/static/js/4.36159861.chunk.js.map",
     "static/js/5.b7fd9bff.chunk.js": "/abv-calculator/static/js/5.b7fd9bff.chunk.js",
     "static/js/5.b7fd9bff.chunk.js.map": "/abv-calculator/static/js/5.b7fd9bff.chunk.js.map",
     "index.html": "/abv-calculator/index.html",
-    "precache-manifest.e8f4b421e7595ccb5875446129887172.js": "/abv-calculator/precache-manifest.e8f4b421e7595ccb5875446129887172.js",
+    "precache-manifest.7eef0d2b8c8139433d60564e6a33d182.js": "/abv-calculator/precache-manifest.7eef0d2b8c8139433d60564e6a33d182.js",
     "service-worker.js": "/abv-calculator/service-worker.js",
     "static/css/3.156fe21f.chunk.css.map": "/abv-calculator/static/css/3.156fe21f.chunk.css.map",
     "static/js/2.0c798f27.chunk.js.LICENSE.txt": "/abv-calculator/static/js/2.0c798f27.chunk.js.LICENSE.txt",
@@ -26,8 +26,8 @@
     "static/media/settings.c60daf06.svg": "/abv-calculator/static/media/settings.c60daf06.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.25f889a6.js",
+    "static/js/runtime-main.ee68ff1a.js",
     "static/js/2.0c798f27.chunk.js",
-    "static/js/main.1663986c.chunk.js"
+    "static/js/main.e1902ea3.chunk.js"
   ]
 }
