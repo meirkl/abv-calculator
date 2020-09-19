@@ -71,7 +71,7 @@ const CheckBox = styled.div`
     &:checked {
       ~ span {
         border-color: ${secondaryLight};
-        box-shadow: 0px 0px 0px 15px ${secondaryLight} inset;
+        box-shadow: 0px 0px 0px 5px ${secondaryLight} inset;
 
         &::after {
           opacity: 1;
@@ -84,7 +84,7 @@ const CheckBox = styled.div`
   span {
     width: 20px;
     height: 20px;
-    border-radius: 100px;
+    border-radius: 50%;
     border: 2px solid ${secondaryLight};
     box-shadow: 0px 0px 0px 0px ${secondaryLight} inset;
     transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);

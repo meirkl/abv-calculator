@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  BRIX_MIN_VALUE,
   BRIX_MAX_VALUE,
-  SG_MIN_VALUE,
+  BRIX_MIN_VALUE,
   SG_MAX_VALUE,
+  SG_MIN_VALUE,
 } from '../constants';
 import { useDebounce } from '../hooks/useDebounce';
 import { brixToSG, formatValue, SGToBrix } from '../utils/functions';
 import RangeSlider from './RangeSlider';
 
-const BrixConverter = () => {
+const Converter = () => {
   const [brix, setBrix] = React.useState(BRIX_MIN_VALUE);
   const [sg, setSg] = React.useState(SG_MIN_VALUE);
 
@@ -61,4 +61,4 @@ const Title = styled.h2`
   }
 `;
 
-export default BrixConverter;
+export default Converter;

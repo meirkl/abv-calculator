@@ -1,61 +1,75 @@
 import React from 'react';
 import styled from 'styled-components';
+import { NavLink, useLocation } from 'react-router-dom';
 import { ReactComponent as ExchangeIcon } from '../media/exchange.svg';
 import { ReactComponent as PercentIcon } from '../media/percent.svg';
 import { light } from '../constants/colors';
 
-export type TabName = 'abv-calculator' | 'brix-converter';
-
-type Props = {
-  activeTab: TabName;
-  setActiveTab: React.Dispatch<React.SetStateAction<TabName>>;
-};
-
-const Tabs: React.FC<Props> = props => {
-  const handleChange = (tabName: TabName) => {
-    props.setActiveTab(tabName);
-  };
+const Tabs: React.FC = () => {
+  const { pathname } = useLocation();
 
   return (
-    <StyledTabs>
-      <Tab
-        active={props.activeTab === 'abv-calculator'}
-        onClick={() => handleChange('abv-calculator')}
-      >
-        <div>
-          <PercentIcon />
-        </div>
-        ABV Calculator
-      </Tab>
-      <Tab
-        active={props.activeTab === 'brix-converter'}
-        onClick={() => handleChange('brix-converter')}
-      >
-        <div>
-          <ExchangeIcon />
-        </div>
-        Brix Converter
-      </Tab>
-    </StyledTabs>
+    <nav>
+      <StyledTabs>
+        <Tab active={pathname === '/calculator'}>
+          <StyledNavLink to="/calculator" activeClassName="active">
+            <div>
+              <PercentIcon />
+            </div>
+            <div>ABV Calculator</div>
+          </StyledNavLink>
+        </Tab>
+        <Tab active={pathname === '/converter'}>
+          <StyledNavLink to="/converter" activeClassName="active">
+            <div>
+              <ExchangeIcon />
+            </div>
+            <div>Brix Converter</div>
+          </StyledNavLink>
+        </Tab>
+      </StyledTabs>
+    </nav>
   );
 };
 
 const StyledTabs = styled.ul`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
 `;
 
 const Tab = styled.li<{ active: boolean }>`
-  transition: all 1s ease;
-  color: ${props => !props.active && light};
-  border-bottom: ${props => props.active ? '4px solid' : '4px solid transparent'};
-  font-size: 1.2rem;
+  :after {
+    display: block;
+    content: '';
+    border-bottom: solid 3px;
+    transform: ${props => (props.active ? 'scaleX(1)' : 'scaleX(0)')};
+    transform-origin: ${props => props.active && '0% 50%'};
+    transition: ${props =>
+      props.active ? 'transform 300ms ease-in' : 'transform 0ms ease-out'};
+  }
+
+  /* :after {
+    transform: scaleX(1);
+    transform-origin: 0% 50%;
+    transition: transform 300ms ease-in;
+  } */
+`;
+
+const StyledNavLink = styled(NavLink)`
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
   text-align: center;
-  cursor: pointer;
-  padding: 0.5rem;
+
+  padding: 5px;
+
+  :not(.active) {
+    color: ${light};
+  }
+
   svg {
-    height: 2rem;
+    height: 1.7rem;
   }
 `;
 
