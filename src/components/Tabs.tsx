@@ -11,15 +11,15 @@ const Tabs: React.FC = () => {
   return (
     <nav>
       <StyledTabs>
-        <Tab active={pathname === '/'}>
-          <StyledNavLink to="/" activeClassName="active">
+        <Tab active={pathname.endsWith('/')}>
+          <StyledNavLink to="/" exact activeClassName="active">
             <div>
               <PercentIcon />
             </div>
             <div>ABV Calculator</div>
           </StyledNavLink>
         </Tab>
-        <Tab active={pathname === '/converter'}>
+        <Tab active={pathname.endsWith('/converter')}>
           <StyledNavLink to="/converter" activeClassName="active">
             <div>
               <ExchangeIcon />
