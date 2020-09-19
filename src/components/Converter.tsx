@@ -14,8 +14,8 @@ const Converter = () => {
   const [brix, setBrix] = React.useState(BRIX_MIN_VALUE);
   const [sg, setSg] = React.useState(SG_MIN_VALUE);
 
-  const debouncedBrix = useDebounce(brix, 500);
-  const debouncedSg = useDebounce(sg, 500);
+  const debouncedBrix = useDebounce(brix, 250);
+  const debouncedSg = useDebounce(sg, 250);
 
   return (
     <>
