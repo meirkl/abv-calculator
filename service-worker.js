@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/abv-calculator/precache-manifest.6d3ba47d09d61b1d744f98518387a815.js"
+  "/abv-calculator/precache-manifest.c6ff6f4be6481c9293b26cf91650e7c0.js"
 );
 
 self.addEventListener('message', (event) => {
