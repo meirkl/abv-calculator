@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "715fea1f6132205e91f69160c5608c7b",
+    "revision": "fa85d17a22efc350d8902974c09b79e3",
     "url": "/abv-calculator/index.html"
   },
   {
-    "revision": "ea96015c2eb48348ff83",
+    "revision": "39d9d71cb027d548ee48",
     "url": "/abv-calculator/static/css/2.156fe21f.chunk.css"
   },
   {
-    "revision": "ea96015c2eb48348ff83",
-    "url": "/abv-calculator/static/js/2.2aa0ce5a.chunk.js"
+    "revision": "39d9d71cb027d548ee48",
+    "url": "/abv-calculator/static/js/2.667d6161.chunk.js"
   },
   {
     "revision": "64bea2e190f27355a76963b8cb94bb7b",
-    "url": "/abv-calculator/static/js/2.2aa0ce5a.chunk.js.LICENSE.txt"
+    "url": "/abv-calculator/static/js/2.667d6161.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "30ab6dd8d55decabd6ef",
-    "url": "/abv-calculator/static/js/main.e3fbfab0.chunk.js"
+    "revision": "ebd3b014a5306f45975d",
+    "url": "/abv-calculator/static/js/main.b43fb1e5.chunk.js"
   },
   {
     "revision": "1e5b95c2478cd57eb8fa",
@@ -32,8 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abv-calculator/static/media/Roboto-Regular.8169e1a1.woff2"
   },
   {
-    "revision": "617870e422d4b75087cdcf9ff298032e",
-    "url": "/abv-calculator/static/media/github.617870e4.svg"
+    "revision": "0da5066a6ca67bf479f7a01f06c56a77",
+    "url": "/abv-calculator/static/media/exchange.0da5066a.svg"
+  },
+  {
+    "revision": "895e1a90e8c7f755d4f955cce49b7928",
+    "url": "/abv-calculator/static/media/percent.895e1a90.svg"
   },
   {
     "revision": "c60daf06b7642736261f458782bedf08",
