@@ -9,9 +9,9 @@ const App: React.FC = () => {
     <Wrapper>
       <BrowserRouter basename="/abv-calculator">
         <Switch>
-          <Route path="/calculator" component={AbvCalculatorPage} />
+          <Route path="/" component={AbvCalculatorPage} />
           <Route path="/converter" component={BrixConverterPage} />
-          <Route render={() => <Redirect to="/calculator" />} />
+          <Route render={() => <Redirect to="/" />} />
         </Switch>
         <Tabs />
       </BrowserRouter>

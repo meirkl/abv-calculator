@@ -11,8 +11,8 @@ const Tabs: React.FC = () => {
   return (
     <nav>
       <StyledTabs>
-        <Tab active={pathname === '/calculator'}>
-          <StyledNavLink to="/calculator" activeClassName="active">
+        <Tab active={pathname === '/'}>
+          <StyledNavLink to="/" activeClassName="active">
             <div>
               <PercentIcon />
             </div>
