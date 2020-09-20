@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b746ae9a401db0ccbf5c0f2edf29f36c",
+    "revision": "2787f1f4e16e7dbe944b91305a8ba6d3",
     "url": "/abv-calculator/index.html"
   },
   {
@@ -28,16 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abv-calculator/static/js/4.f01b3a02.chunk.js"
   },
   {
-    "revision": "5ce4aa046b219b177ff5",
-    "url": "/abv-calculator/static/js/5.d55e0218.chunk.js"
+    "revision": "e451d8ef3e582a365ffb",
+    "url": "/abv-calculator/static/js/5.7da96383.chunk.js"
   },
   {
     "revision": "ba6c269cf6ba69dc731a",
     "url": "/abv-calculator/static/js/main.db9d3a06.chunk.js"
   },
   {
-    "revision": "f404d88e28412692107d",
-    "url": "/abv-calculator/static/js/runtime-main.0d57800f.js"
+    "revision": "6851a846fe114e4c26d6",
+    "url": "/abv-calculator/static/js/runtime-main.8b44a71c.js"
   },
   {
     "revision": "399b65d75a0bccefa9b64cd5c6157fa6",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8169e1a170280556f069ca104db7a405",
     "url": "/abv-calculator/static/media/Roboto-Regular.8169e1a1.woff2"
-  },
-  {
-    "revision": "c60daf06b7642736261f458782bedf08",
-    "url": "/abv-calculator/static/media/settings.c60daf06.svg"
   },
   {
     "revision": "820ca2e216a471deeef324fb45a2d510",
