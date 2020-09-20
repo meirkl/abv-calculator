@@ -39,7 +39,7 @@ const StyledRangeSlider = styled.fieldset`
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background: ${secondary};
+    background: ${secondary.main};
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;

@@ -19,7 +19,7 @@ const Gauge: React.FC<Props> = React.memo(({ abv }) => {
       id="abv-gauge"
       style={{ height: '100px', margin: '15px 0' }}
       nrOfLevels={20}
-      colors={[secondary, danger]}
+      colors={[secondary.main, danger]}
       arcWidth={0.2}
       needleColor={primary}
       needleBaseColor={primary}

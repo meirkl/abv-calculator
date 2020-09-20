@@ -6,7 +6,7 @@ import {
   SG_MAX_VALUE,
   SG_MIN_VALUE,
 } from '../constants';
-import { lightenDark } from '../constants/colors';
+import { dark } from '../constants/colors';
 import { useDebounce } from '../hooks/useDebounce';
 import { brixToSG, formatValue, SGToBrix } from '../utils/functions';
 import RangeSlider from './RangeSlider';
@@ -64,7 +64,7 @@ const Card = styled.div`
   text-align: center;
   width: 90%;
 
-  background-color: ${lightenDark};
+  background-color: ${dark.light};
   margin-top: 30px;
   padding: 20px;
   border-radius: 3px;

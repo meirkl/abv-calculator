@@ -1,11 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import {
-  light,
-  secondary,
-  secondaryDark,
-  secondaryLight,
-} from '../constants/colors';
+import { light, secondary } from '../constants/colors';
 import { useAbvEquationContext } from '../context/AbvEquation';
 import { useOnClickOutside } from '../hooks/useOnClickOutside';
 
@@ -69,8 +64,8 @@ const CheckBox = styled.div`
 
     &:checked {
       ~ span {
-        border-color: ${secondaryLight};
-        box-shadow: 0px 0px 0px 5px ${secondaryLight} inset;
+        border-color: ${secondary.light};
+        box-shadow: 0px 0px 0px 5px ${secondary.light} inset;
 
         &::after {
           opacity: 1;
@@ -84,8 +79,8 @@ const CheckBox = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    border: 2px solid ${secondaryLight};
-    box-shadow: 0px 0px 0px 0px ${secondaryLight} inset;
+    border: 2px solid ${secondary.light};
+    box-shadow: 0px 0px 0px 0px ${secondary.light} inset;
     transition: all 0.15s cubic-bezier(0, 1.05, 0.72, 1.07);
   }
 `;
@@ -94,8 +89,8 @@ const StyledSettingsCommon = css`
   position: fixed;
   top: calc(80vh / 5);
   left: 0;
-  background-color: ${secondaryDark};
-  border: 1px solid ${secondary};
+  background-color: ${secondary.dark};
+  border: 1px solid ${secondary.main};
   border-left: none;
   border-radius: 0 3px 3px 0;
 `;

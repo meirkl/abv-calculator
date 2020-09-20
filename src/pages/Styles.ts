@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PageContent = styled.main`
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;

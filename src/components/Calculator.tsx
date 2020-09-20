@@ -5,7 +5,7 @@ import { useAbvEquationContext } from '../context/AbvEquation';
 import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
-import { lightenDark } from '../constants/colors';
+import { dark } from '../constants/colors';
 
 const Calculator: React.FC = () => {
   const { calculateAbv } = useAbvEquationContext();
@@ -55,7 +55,7 @@ const Card = styled.div`
   align-items: center;
   text-align: center;
   width: 90%;
-  background-color: ${lightenDark};
+  background-color: ${dark.light};
   margin-top: 10px;
   padding: 10px;
   border-radius: 3px;

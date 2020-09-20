@@ -4,20 +4,18 @@ import styled from 'styled-components';
 import Tabs from './Tabs';
 import { AbvCalculatorPage, BrixConverterPage } from '../pages';
 
-const App: React.FC = () => {
-  return (
-    <Wrapper>
-      <BrowserRouter basename="/abv-calculator">
-        <Switch>
-          <Route path="/" exact component={AbvCalculatorPage} />
-          <Route path="/converter" component={BrixConverterPage} />
-          <Route render={() => <Redirect to="/" />} />
-        </Switch>
-        <Tabs />
-      </BrowserRouter>
-    </Wrapper>
-  );
-};
+const App: React.FC = () => (
+  <Wrapper>
+    <BrowserRouter basename="/abv-calculator">
+      <Switch>
+        <Route path="/" exact component={AbvCalculatorPage} />
+        <Route path="/converter" component={BrixConverterPage} />
+        <Route render={() => <Redirect to="/" />} />
+      </Switch>
+      <Tabs />
+    </BrowserRouter>
+  </Wrapper>
+);
 
 export const Wrapper = styled.div`
   display: flex;

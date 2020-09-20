@@ -11,7 +11,7 @@ const Spinner: React.FC = () => (
 const Wrapper = styled.div`
   display: grid;
   place-items: center;
-  height: 100vh;
+  height: 100%;
   svg {
     height: 3rem;
   }

@@ -7,9 +7,10 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+
   body {
     font-family: 'Lobster', cursive;
-    background: ${dark};
+    background: ${dark.main};
     color: ${primary};
     font-size: 16px;
   }
