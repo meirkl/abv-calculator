@@ -1,6 +1,11 @@
 import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
-import { secondary, secondaryDark, secondaryLight } from '../constants/colors';
+import {
+  light,
+  secondary,
+  secondaryDark,
+  secondaryLight,
+} from '../constants/colors';
 import { useAbvEquationContext } from '../context/AbvEquation';
 import useOnClickOutside from '../hooks/useOnClickOutside';
 
@@ -100,8 +105,10 @@ const SettingsDrawerButton = styled.div`
   padding: 5px;
   display: flex;
   align-items: center;
+  color: ${light};
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
+  cursor: pointer;
 `;
 
 const StyledSettings = styled.div<{ showMenu: boolean }>`
