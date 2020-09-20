@@ -28,7 +28,7 @@ const Tabs: React.FC = () => {
 
 const StyledTabs = styled.nav`
   background-color: ${dark.dark};
-  padding-bottom: env(safe-area-inset-bottom, 0);
+  padding-bottom: env(safe-area-inset-bottom);
   ul {
     list-style: none;
   }
