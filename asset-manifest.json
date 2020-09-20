@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.js": "/abv-calculator/static/js/main.b33ddf9d.chunk.js",
-    "main.js.map": "/abv-calculator/static/js/main.b33ddf9d.chunk.js.map",
-    "runtime-main.js": "/abv-calculator/static/js/runtime-main.03ebdff5.js",
-    "runtime-main.js.map": "/abv-calculator/static/js/runtime-main.03ebdff5.js.map",
-    "static/js/2.1b18b989.chunk.js": "/abv-calculator/static/js/2.1b18b989.chunk.js",
-    "static/js/2.1b18b989.chunk.js.map": "/abv-calculator/static/js/2.1b18b989.chunk.js.map",
+    "main.js": "/abv-calculator/static/js/main.db9d3a06.chunk.js",
+    "main.js.map": "/abv-calculator/static/js/main.db9d3a06.chunk.js.map",
+    "runtime-main.js": "/abv-calculator/static/js/runtime-main.0d57800f.js",
+    "runtime-main.js.map": "/abv-calculator/static/js/runtime-main.0d57800f.js.map",
+    "static/js/2.e130416f.chunk.js": "/abv-calculator/static/js/2.e130416f.chunk.js",
+    "static/js/2.e130416f.chunk.js.map": "/abv-calculator/static/js/2.e130416f.chunk.js.map",
     "static/css/3.156fe21f.chunk.css": "/abv-calculator/static/css/3.156fe21f.chunk.css",
-    "static/js/3.89e23fee.chunk.js": "/abv-calculator/static/js/3.89e23fee.chunk.js",
-    "static/js/3.89e23fee.chunk.js.map": "/abv-calculator/static/js/3.89e23fee.chunk.js.map",
-    "static/js/4.81bcd375.chunk.js": "/abv-calculator/static/js/4.81bcd375.chunk.js",
-    "static/js/4.81bcd375.chunk.js.map": "/abv-calculator/static/js/4.81bcd375.chunk.js.map",
-    "static/js/5.b455b866.chunk.js": "/abv-calculator/static/js/5.b455b866.chunk.js",
-    "static/js/5.b455b866.chunk.js.map": "/abv-calculator/static/js/5.b455b866.chunk.js.map",
+    "static/js/3.2a0ad144.chunk.js": "/abv-calculator/static/js/3.2a0ad144.chunk.js",
+    "static/js/3.2a0ad144.chunk.js.map": "/abv-calculator/static/js/3.2a0ad144.chunk.js.map",
+    "static/js/4.f01b3a02.chunk.js": "/abv-calculator/static/js/4.f01b3a02.chunk.js",
+    "static/js/4.f01b3a02.chunk.js.map": "/abv-calculator/static/js/4.f01b3a02.chunk.js.map",
+    "static/js/5.d55e0218.chunk.js": "/abv-calculator/static/js/5.d55e0218.chunk.js",
+    "static/js/5.d55e0218.chunk.js.map": "/abv-calculator/static/js/5.d55e0218.chunk.js.map",
     "index.html": "/abv-calculator/index.html",
-    "precache-manifest.eedc74961c9aa5b80512b7dcd2179e7b.js": "/abv-calculator/precache-manifest.eedc74961c9aa5b80512b7dcd2179e7b.js",
+    "precache-manifest.ce1b0e68fb26bc8e4578bc267a0179c4.js": "/abv-calculator/precache-manifest.ce1b0e68fb26bc8e4578bc267a0179c4.js",
     "service-worker.js": "/abv-calculator/service-worker.js",
     "static/css/3.156fe21f.chunk.css.map": "/abv-calculator/static/css/3.156fe21f.chunk.css.map",
-    "static/js/2.1b18b989.chunk.js.LICENSE.txt": "/abv-calculator/static/js/2.1b18b989.chunk.js.LICENSE.txt",
-    "static/js/3.89e23fee.chunk.js.LICENSE.txt": "/abv-calculator/static/js/3.89e23fee.chunk.js.LICENSE.txt",
+    "static/js/2.e130416f.chunk.js.LICENSE.txt": "/abv-calculator/static/js/2.e130416f.chunk.js.LICENSE.txt",
+    "static/js/3.2a0ad144.chunk.js.LICENSE.txt": "/abv-calculator/static/js/3.2a0ad144.chunk.js.LICENSE.txt",
     "static/media/Lobster-Regular.woff2": "/abv-calculator/static/media/Lobster-Regular.399b65d7.woff2",
     "static/media/Roboto-Regular.woff2": "/abv-calculator/static/media/Roboto-Regular.8169e1a1.woff2",
-    "static/media/settings.c60daf06.svg": "/abv-calculator/static/media/settings.c60daf06.svg"
+    "static/media/settings.c60daf06.svg": "/abv-calculator/static/media/settings.c60daf06.svg",
+    "static/media/spinner.820ca2e2.svg": "/abv-calculator/static/media/spinner.820ca2e2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.03ebdff5.js",
-    "static/js/2.1b18b989.chunk.js",
-    "static/js/main.b33ddf9d.chunk.js"
+    "static/js/runtime-main.0d57800f.js",
+    "static/js/2.e130416f.chunk.js",
+    "static/js/main.db9d3a06.chunk.js"
   ]
 }
