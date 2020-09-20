@@ -3,7 +3,6 @@ import {
   calculateAbvAlternate,
   calculateAbvStandard,
 } from '../utils/functions';
-import ContextDevTool from 'react-context-devtool';
 
 type Props = { children: React.ReactNode };
 
@@ -58,11 +57,6 @@ export const AbvEquationContextProvider = ({ children }: Props) => {
     <AbvEquationContext.Provider
       value={{ equation, changeHandler, calculateAbv }}
     >
-      <ContextDevTool
-        context={AbvEquationContext}
-        id="abv-context"
-        displayName="Abv Equation Context"
-      />
       {children}
     </AbvEquationContext.Provider>
   );
