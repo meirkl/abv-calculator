@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledMain = styled.main`
+  height: 100vh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

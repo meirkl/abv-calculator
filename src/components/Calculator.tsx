@@ -1,10 +1,12 @@
 import React from 'react';
+import { lighten } from 'polished';
 import styled from 'styled-components';
 import { HYDROMETER_MIN_VALUE, HYDROMETER_MAX_VALUE } from '../constants';
 import { useAbvEquationContext } from '../context/AbvEquation';
 import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
+import { dark } from '../constants/colors';
 
 const Calculator: React.FC = () => {
   const { calculateAbv } = useAbvEquationContext();
@@ -24,30 +26,41 @@ const Calculator: React.FC = () => {
         <span>ABV</span>
         {abv}%
       </Result>
-      <RangeSliderWrapper>
-        <RangeSlider
-          label="og"
-          value={og}
-          min={HYDROMETER_MIN_VALUE}
-          max={HYDROMETER_MAX_VALUE}
-          step={0.001}
-          onChange={e => setOg(formatValue(Number(e.target.value)))}
-        />
-        <RangeSlider
-          label="fg"
-          value={fg}
-          min={HYDROMETER_MIN_VALUE}
-          max={HYDROMETER_MAX_VALUE}
-          step={0.001}
-          onChange={e => setFg(formatValue(Number(e.target.value)))}
-        />
-      </RangeSliderWrapper>
+      <Card>
+        <RangeSliderWrapper>
+          <RangeSlider
+            label="og"
+            value={og}
+            min={HYDROMETER_MIN_VALUE}
+            max={HYDROMETER_MAX_VALUE}
+            step={0.001}
+            onChange={e => setOg(formatValue(Number(e.target.value)))}
+          />
+          <RangeSlider
+            label="fg"
+            value={fg}
+            min={HYDROMETER_MIN_VALUE}
+            max={HYDROMETER_MAX_VALUE}
+            step={0.001}
+            onChange={e => setFg(formatValue(Number(e.target.value)))}
+          />
+        </RangeSliderWrapper>
+      </Card>
     </>
   );
 };
 
+const Card = styled.div`
+  width: 90%;
+  background-color: ${lighten(0.05, dark)};
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 3px;
+`;
+
 const RangeSliderWrapper = styled.div`
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 `;
 
 const Result = styled.div`

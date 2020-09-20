@@ -1,4 +1,5 @@
 import React from 'react';
+import { lighten } from 'polished';
 import styled from 'styled-components';
 import {
   BRIX_MAX_VALUE,
@@ -6,6 +7,7 @@ import {
   SG_MAX_VALUE,
   SG_MIN_VALUE,
 } from '../constants';
+import { dark } from '../constants/colors';
 import { useDebounce } from '../hooks/useDebounce';
 import { brixToSG, formatValue, SGToBrix } from '../utils/functions';
 import RangeSlider from './RangeSlider';
@@ -19,39 +21,59 @@ const Converter = () => {
 
   return (
     <>
-      <Title>
-        <span>SG</span> {formatValue(brixToSG(debouncedBrix))}
-      </Title>
-      <RangeSliderWrapper>
-        <RangeSlider
-          label="brix"
-          value={brix}
-          min={BRIX_MIN_VALUE}
-          max={BRIX_MAX_VALUE}
-          step={0.1}
-          fractionDigits={1}
-          onChange={e => setBrix(formatValue(Number(e.target.value), 1))}
-        />
-      </RangeSliderWrapper>
-      <Title>
-        <span>Brix</span> {formatValue(SGToBrix(debouncedSg), 1)}
-      </Title>
-      <RangeSliderWrapper>
-        <RangeSlider
-          label="sg"
-          value={sg}
-          min={SG_MIN_VALUE}
-          max={SG_MAX_VALUE}
-          step={0.001}
-          onChange={e => setSg(formatValue(Number(e.target.value)))}
-        />
-      </RangeSliderWrapper>
+      <Card>
+        <span>Brix → SG</span>
+        <Title>
+          <span>SG</span> {formatValue(brixToSG(debouncedBrix))}
+        </Title>
+        <RangeSliderWrapper>
+          <RangeSlider
+            label="brix"
+            value={brix}
+            min={BRIX_MIN_VALUE}
+            max={BRIX_MAX_VALUE}
+            step={0.1}
+            fractionDigits={2}
+            onChange={e => setBrix(parseFloat(e.target.value))}
+          />
+        </RangeSliderWrapper>
+      </Card>
+      <Card>
+        <span>SG → Brix</span>
+        <Title>
+          <span>Brix</span> {formatValue(SGToBrix(debouncedSg), 2)}
+        </Title>
+        <RangeSliderWrapper>
+          <RangeSlider
+            label="sg"
+            value={sg}
+            min={SG_MIN_VALUE}
+            max={SG_MAX_VALUE}
+            step={0.001}
+            onChange={e => setSg(Number(e.target.value))}
+          />
+        </RangeSliderWrapper>
+      </Card>
     </>
   );
 };
 
+const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+
+  background-color: ${lighten(0.05, dark)};
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 3px;
+`;
+
 const RangeSliderWrapper = styled.div`
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
 `;
 
 const Title = styled.h2`
