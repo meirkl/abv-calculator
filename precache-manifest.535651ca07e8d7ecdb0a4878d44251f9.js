@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c1dfcbf39f05d077f9f0bc57f655b8d",
+    "revision": "790716142a7a063494c0424bf1c54f41",
     "url": "/abv-calculator/index.html"
   },
   {
@@ -24,20 +24,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abv-calculator/static/js/3.423975c0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "41afcc482892d9ce4b02",
-    "url": "/abv-calculator/static/js/4.36159861.chunk.js"
+    "revision": "e760f1d1c5398b423a96",
+    "url": "/abv-calculator/static/js/4.42f30617.chunk.js"
   },
   {
-    "revision": "90d7d3853e924e7f72ba",
-    "url": "/abv-calculator/static/js/5.b7fd9bff.chunk.js"
+    "revision": "f6dfc89fd85af062323a",
+    "url": "/abv-calculator/static/js/5.ed9f9f36.chunk.js"
   },
   {
-    "revision": "f652ef7f989e009ce8c5",
-    "url": "/abv-calculator/static/js/main.e1902ea3.chunk.js"
+    "revision": "3d50879a934d353a1216",
+    "url": "/abv-calculator/static/js/6.62ef489b.chunk.js"
   },
   {
-    "revision": "76ab5aacda469ff37229",
-    "url": "/abv-calculator/static/js/runtime-main.ee68ff1a.js"
+    "revision": "c8a0ccdc92df5cde00d9",
+    "url": "/abv-calculator/static/js/main.d2885d07.chunk.js"
+  },
+  {
+    "revision": "0c9cfb13c520b2b44cef",
+    "url": "/abv-calculator/static/js/runtime-main.f300c15d.js"
   },
   {
     "revision": "399b65d75a0bccefa9b64cd5c6157fa6",
@@ -46,14 +50,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8169e1a170280556f069ca104db7a405",
     "url": "/abv-calculator/static/media/Roboto-Regular.8169e1a1.woff2"
-  },
-  {
-    "revision": "0da5066a6ca67bf479f7a01f06c56a77",
-    "url": "/abv-calculator/static/media/exchange.0da5066a.svg"
-  },
-  {
-    "revision": "895e1a90e8c7f755d4f955cce49b7928",
-    "url": "/abv-calculator/static/media/percent.895e1a90.svg"
   },
   {
     "revision": "c60daf06b7642736261f458782bedf08",
