@@ -1,14 +1,8 @@
 import React, { useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
-import {
-  light,
-  secondary,
-  secondaryDark,
-  secondaryLight,
-} from '../constants/colors';
+import { secondary, secondaryDark, secondaryLight } from '../constants/colors';
 import { useAbvEquationContext } from '../context/AbvEquation';
 import useOnClickOutside from '../hooks/useOnClickOutside';
-import { ReactComponent as SettingsIcon } from '../media/settings.svg';
 
 const Settings: React.FC = () => {
   const wrapperRef = useRef(null);
@@ -21,7 +15,7 @@ const Settings: React.FC = () => {
   return (
     <div ref={wrapperRef}>
       <SettingsDrawerButton onClick={() => setShowSettings(true)}>
-        <StyledSettingsIcon />
+        Σ
       </SettingsDrawerButton>
       <StyledSettings showMenu={showSettings}>
         <h5>Equation</h5>
@@ -106,12 +100,8 @@ const SettingsDrawerButton = styled.div`
   padding: 5px;
   display: flex;
   align-items: center;
-`;
-
-const StyledSettingsIcon = styled(SettingsIcon)`
-  width: 35px;
-  height: 35px;
-  fill: ${light};
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
 `;
 
 const StyledSettings = styled.div<{ showMenu: boolean }>`
