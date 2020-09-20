@@ -52,10 +52,11 @@ const Calculator: React.FC = () => {
 
 const Card = styled.div`
   width: 90%;
-  background-color: ${lighten(0.05, dark)};
+  background-color: ${lighten(0.01, dark)};
   margin-top: 10px;
   padding: 10px;
   border-radius: 3px;
+  padding: 20px;
 `;
 
 const RangeSliderWrapper = styled.div`

@@ -1,14 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink, useLocation } from 'react-router-dom';
-import { light } from '../constants/colors';
+import { dark, light } from '../constants/colors';
+import { darken } from 'polished';
 
 const Tabs: React.FC = () => {
   const { pathname } = useLocation();
 
   return (
-    <nav>
-      <StyledTabs>
+    <StyledTabs>
+      <ul>
         <Tab active={pathname.endsWith('/')}>
           <StyledNavLink to="/" exact activeClassName="active">
             <div>%</div>
@@ -21,13 +22,16 @@ const Tabs: React.FC = () => {
             <div>Brix Converter</div>
           </StyledNavLink>
         </Tab>
-      </StyledTabs>
-    </nav>
+      </ul>
+    </StyledTabs>
   );
 };
 
-const StyledTabs = styled.ul`
-  list-style: none;
+const StyledTabs = styled.nav`
+  background-color: ${darken(0.01, dark)};
+  ul {
+    list-style: none;
+  }
 `;
 
 const Tab = styled.li<{ active: boolean }>`

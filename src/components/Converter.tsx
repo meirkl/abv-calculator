@@ -65,7 +65,7 @@ const Card = styled.div`
   text-align: center;
   width: 90%;
 
-  background-color: ${lighten(0.05, dark)};
+  background-color: ${lighten(0.01, dark)};
   margin-top: 30px;
   padding: 20px;
   border-radius: 3px;
