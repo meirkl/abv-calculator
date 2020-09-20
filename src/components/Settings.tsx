@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import styled, { css } from 'styled-components';
 import {
   light,
@@ -7,15 +7,15 @@ import {
   secondaryLight,
 } from '../constants/colors';
 import { useAbvEquationContext } from '../context/AbvEquation';
-import useOnClickOutside from '../hooks/useOnClickOutside';
+import { useOnClickOutside } from '../hooks/useOnClickOutside';
 
 const Settings: React.FC = () => {
-  const wrapperRef = useRef(null);
+  const wrapperRef = React.useRef(null);
 
   const { equation, changeHandler } = useAbvEquationContext();
   useOnClickOutside(wrapperRef, () => setShowSettings(false));
 
-  const [showSettings, setShowSettings] = useState(false);
+  const [showSettings, setShowSettings] = React.useState(false);
 
   return (
     <div ref={wrapperRef}>

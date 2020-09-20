@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React from 'react';
 import {
   calculateAbvAlternate,
   calculateAbvStandard,
@@ -15,19 +15,19 @@ type ContextProps = {
   calculateAbv: (og: number, fg: number) => number;
 };
 
-const AbvEquationContext = createContext<ContextProps>({
+const AbvEquationContext = React.createContext<ContextProps>({
   equation: 'standard',
   changeHandler: () => {},
   calculateAbv: () => 0,
 });
 
 export const useAbvEquationContext = (): ContextProps =>
-  useContext(AbvEquationContext);
+  React.useContext(AbvEquationContext);
 
 export const AbvEquationContextProvider = ({ children }: Props) => {
-  const [equation, setEquation] = useState<EquationMode>('standard');
+  const [equation, setEquation] = React.useState<EquationMode>('standard');
 
-  useEffect(() => {
+  React.useEffect(() => {
     const abvEquationMode = localStorage.getItem(
       'EquationMode',
     ) as EquationMode;

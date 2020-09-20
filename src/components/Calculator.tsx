@@ -6,7 +6,6 @@ import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
 import { lightenDark } from '../constants/colors';
-import { useDebounce } from '../hooks/useDebounce';
 
 const Calculator: React.FC = () => {
   const { calculateAbv } = useAbvEquationContext();
@@ -19,14 +18,12 @@ const Calculator: React.FC = () => {
     setAbv(result > 0 ? result : 0);
   }, [og, fg, calculateAbv]);
 
-  const debouncedAbv = useDebounce(abv, 250);
-
   return (
     <>
-      <Gauge abv={debouncedAbv} />
+      <Gauge abv={abv} />
       <Result>
         <span>ABV</span>
-        {debouncedAbv}%
+        {abv}%
       </Result>
       <Card>
         <RangeSliderWrapper>

@@ -1,13 +1,6 @@
-# ABV (Alcohol By Volume) Calculator
+# ABV (Alcohol By Volume) calculator and brix to specific gravity converter
 
-Finds ABV based on gravity change. If you took an original gravity reading (or had estimated OG), and also took a final gravity (FG) reading prior to adding priming sugar at bottling you can find out your batch's alcohol by volume ABV.
+- Finds ABV based on gravity change. If you took an original gravity reading (or had estimated OG), and also took a final gravity (FG) reading prior to adding priming sugar at bottling you can find out your batch's alcohol by volume ABV.
+- Convert brix to specific gravity and vice versa.
 
 ### Try it out! [(https://meirkl.github.io/abv-calculator)](https://meirkl.github.io/abv-calculator)
-
-## Screenshots
-
-<img src="./src/media/demo1.jpg" alt="ABV Calculator screenshot standard" height="500px">  
-<img src="./src/media/demo2.jpg" alt="ABV Calculator screenshot standard with drawer open" height="500px">   
-<img src="./src/media/demo3.jpg" alt="ABV Calculator screenshot alternate" height="500px">   
-<img src="./src/media/demo4.jpg" alt="ABV Calculator screenshot alternate with drawer open" height="500px">   
-

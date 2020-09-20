@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { primary, secondary } from '../constants/colors';
 
@@ -12,7 +12,7 @@ type Props = {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
-const RangeSlider: React.FC<Props> = memo(
+const RangeSlider: React.FC<Props> = React.memo(
   ({ label, value, min, max, step, fractionDigits = 3, onChange }) => (
     <StyledRangeSlider>
       <output>

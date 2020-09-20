@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 /**
  * Hook that executes a callback on click outside of the passed ref
  */
-const useOnClickOutside = <T extends HTMLElement>(
+export function useOnClickOutside<T extends HTMLElement>(
   ref: React.RefObject<T>,
   callback: () => void,
-) => {
-  useEffect(() => {
+) {
+  React.useEffect(() => {
     /**
      * Execute callback
      */
@@ -24,6 +24,4 @@ const useOnClickOutside = <T extends HTMLElement>(
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [ref, callback]);
-};
-
-export default useOnClickOutside;
+}
