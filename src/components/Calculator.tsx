@@ -1,12 +1,12 @@
 import React from 'react';
-import { lighten } from 'polished';
 import styled from 'styled-components';
 import { HYDROMETER_MIN_VALUE, HYDROMETER_MAX_VALUE } from '../constants';
 import { useAbvEquationContext } from '../context/AbvEquation';
 import { formatValue } from '../utils/functions';
 import Gauge from './Gauge';
 import RangeSlider from './RangeSlider';
-import { dark } from '../constants/colors';
+import { lightenDark } from '../constants/colors';
+import { useDebounce } from '../hooks/useDebounce';
 
 const Calculator: React.FC = () => {
   const { calculateAbv } = useAbvEquationContext();
@@ -19,12 +19,14 @@ const Calculator: React.FC = () => {
     setAbv(result > 0 ? result : 0);
   }, [og, fg, calculateAbv]);
 
+  const debouncedAbv = useDebounce(abv, 250);
+
   return (
     <>
-      <Gauge abv={abv} />
+      <Gauge abv={debouncedAbv} />
       <Result>
         <span>ABV</span>
-        {abv}%
+        {debouncedAbv}%
       </Result>
       <Card>
         <RangeSliderWrapper>
@@ -51,8 +53,12 @@ const Calculator: React.FC = () => {
 };
 
 const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   width: 90%;
-  background-color: ${lighten(0.01, dark)};
+  background-color: ${lightenDark};
   margin-top: 10px;
   padding: 10px;
   border-radius: 3px;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledMain = styled.main`
+export const PageContent = styled.main`
   height: 100vh;
   overflow-y: auto;
   display: flex;

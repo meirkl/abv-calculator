@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import styled from 'styled-components';
 import { AbvCalculatorPage, BrixConverterPage } from '../pages';
-import Tabs from './Tabs';
 
 const App: React.FC = () => {
   return (
@@ -13,7 +12,6 @@ const App: React.FC = () => {
           <Route path="/converter" component={BrixConverterPage} />
           <Route render={() => <Redirect to="/" />} />
         </Switch>
-        <Tabs />
       </BrowserRouter>
     </Wrapper>
   );

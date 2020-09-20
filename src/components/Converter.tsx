@@ -1,5 +1,4 @@
 import React from 'react';
-import { lighten } from 'polished';
 import styled from 'styled-components';
 import {
   BRIX_MAX_VALUE,
@@ -7,7 +6,7 @@ import {
   SG_MAX_VALUE,
   SG_MIN_VALUE,
 } from '../constants';
-import { dark } from '../constants/colors';
+import { lightenDark } from '../constants/colors';
 import { useDebounce } from '../hooks/useDebounce';
 import { brixToSG, formatValue, SGToBrix } from '../utils/functions';
 import RangeSlider from './RangeSlider';
@@ -65,7 +64,7 @@ const Card = styled.div`
   text-align: center;
   width: 90%;
 
-  background-color: ${lighten(0.01, dark)};
+  background-color: ${lightenDark};
   margin-top: 30px;
   padding: 20px;
   border-radius: 3px;

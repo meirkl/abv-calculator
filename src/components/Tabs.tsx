@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { NavLink, useLocation } from 'react-router-dom';
-import { dark, light } from '../constants/colors';
-import { darken } from 'polished';
+import { darkenDark, light } from '../constants/colors';
 
 const Tabs: React.FC = () => {
   const { pathname } = useLocation();
@@ -28,7 +27,7 @@ const Tabs: React.FC = () => {
 };
 
 const StyledTabs = styled.nav`
-  background-color: ${darken(0.01, dark)};
+  background-color: ${darkenDark};
   ul {
     list-style: none;
   }
