@@ -1,11 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
-import { dark, primary } from '../constants/colors';
+import { dark, primary, secondary } from '../constants/colors';
 
 export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 3px !important;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: ${primary};
+    }
   }
 
   body {

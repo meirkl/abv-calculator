@@ -56,7 +56,7 @@ const StyledNavLink = styled(NavLink)`
   font-size: 0.8rem;
 
   display: block;
-  padding-bottom: 5px;
+  padding-bottom: 0.3rem;
 
   :not(.active) {
     color: ${light};

@@ -65,14 +65,17 @@ const Card = styled.div`
   width: 90%;
 
   background-color: ${dark.light};
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 1rem;
+  :last-of-type {
+    margin-bottom: 2rem;
+  }
+  padding: 1.2rem;
   border-radius: 3px;
 `;
 
 const RangeSliderWrapper = styled.div`
   width: 100%;
-  max-width: 350px;
+  max-width: 22rem;
 `;
 
 const Title = styled.h2`

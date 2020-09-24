@@ -56,20 +56,20 @@ const Card = styled.div`
   text-align: center;
   width: 90%;
   background-color: ${dark.light};
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+  padding: 1.2rem;
   border-radius: 3px;
-  padding: 20px;
 `;
 
 const RangeSliderWrapper = styled.div`
   width: 100%;
-  max-width: 350px;
+  max-width: 22rem;
 `;
 
 const Result = styled.div`
-  font-size: 3.75rem;
-  margin: 15px 0;
+  font-size: 3.75em;
+  margin: 1rem 0;
   span {
     margin-right: 0.7rem;
     font-size: 2.5rem;

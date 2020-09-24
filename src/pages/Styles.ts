@@ -12,5 +12,5 @@ export const PageContent = styled.main`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
-  margin: 20px 0;
+  margin: 1.2rem 0;
 `;

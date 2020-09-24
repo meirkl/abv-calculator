@@ -45,7 +45,7 @@ const Settings: React.FC = () => {
 };
 
 const CheckBox = styled.div`
-  margin: 25px 0;
+  margin: 1.5rem 0;
   display: flex;
   align-items: center;
   user-select: none;
@@ -53,7 +53,7 @@ const CheckBox = styled.div`
   label {
     font-size: 1.2rem;
     position: absolute;
-    padding-left: 30px;
+    padding-left: 1.8rem;
     cursor: pointer;
   }
 
@@ -76,8 +76,8 @@ const CheckBox = styled.div`
   }
 
   span {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
     border: 2px solid ${secondary.light};
     box-shadow: 0px 0px 0px 0px ${secondary.light} inset;
@@ -87,7 +87,7 @@ const CheckBox = styled.div`
 
 const StyledSettingsCommon = css`
   position: fixed;
-  top: calc(80vh / 5);
+  top: 25%;
   left: 0;
   background-color: ${secondary.dark};
   border: 1px solid ${secondary.main};
@@ -97,7 +97,7 @@ const StyledSettingsCommon = css`
 
 const SettingsDrawerButton = styled.div`
   ${StyledSettingsCommon};
-  padding: 5px;
+  padding: 0.3rem;
   display: flex;
   align-items: center;
   color: ${light};
@@ -111,7 +111,7 @@ const StyledSettings = styled.div<{ showMenu: boolean }>`
   transform: ${props =>
     props.showMenu ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 15px 25px;
+  padding: 0.9rem 1.5rem;
   h5 {
     font-size: 1.8rem;
     text-align: center;

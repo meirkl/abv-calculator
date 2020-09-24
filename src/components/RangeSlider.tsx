@@ -33,11 +33,11 @@ const RangeSlider: React.FC<Props> = React.memo(
 );
 
 const StyledRangeSlider = styled.fieldset`
-  padding: 12px 0px;
+  padding: 0.75rem 0;
   border: 0;
   input {
     width: 100%;
-    height: 5px;
+    height: 0.3rem;
     border-radius: 5px;
     background: ${secondary.main};
     outline: none;
@@ -49,8 +49,8 @@ const StyledRangeSlider = styled.fieldset`
     }
     ::-webkit-slider-thumb {
       appearance: none;
-      width: 30px;
-      height: 30px;
+      width: 1.8rem;
+      height: 1.8rem;
       border-radius: 50%;
       background: ${primary};
       cursor: pointer;
