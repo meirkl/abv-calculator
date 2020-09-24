@@ -58,7 +58,7 @@ const StyledRangeSlider = styled.fieldset`
   }
   output {
     display: block;
-    color: ${secondary};
+    color: ${secondary.main};
     font-size: 1.4rem;
     text-align: center;
     text-transform: uppercase;
