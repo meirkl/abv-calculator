@@ -18,7 +18,7 @@ const Settings: React.FC = () => {
         Σ
       </SettingsDrawerButton>
       <StyledSettings showMenu={showSettings}>
-        <h5>Equation</h5>
+        <h2>Equation</h2>
         <CheckBox>
           <input
             id="standard"
@@ -112,7 +112,7 @@ const StyledSettings = styled.div<{ showMenu: boolean }>`
     props.showMenu ? 'translateX(0)' : 'translateX(-100%)'};
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0.9rem 1.5rem;
-  h5 {
+  h2 {
     font-size: 1.8rem;
     text-align: center;
   }
