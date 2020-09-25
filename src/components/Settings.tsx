@@ -97,7 +97,7 @@ const StyledSettingsCommon = css`
 
 const SettingsDrawerButton = styled.div`
   ${StyledSettingsCommon};
-  padding: 0.3rem;
+  padding: 0.2rem 0.5rem;
   display: flex;
   align-items: center;
   color: ${light};

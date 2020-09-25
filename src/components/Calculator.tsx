@@ -53,11 +53,11 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 0 0 auto;
   text-align: center;
   width: 90%;
   background-color: ${dark.light};
-  margin-top: 0.6rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   padding: 1.2rem;
   border-radius: 3px;
 `;

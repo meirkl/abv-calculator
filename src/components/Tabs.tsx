@@ -68,7 +68,6 @@ const StyledNavLink = styled(NavLink)`
 
   div:first-of-type {
     font-size: 2.2rem;
-    font-weight: bold;
   }
 `;
 
