@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const PageContent = styled.main`
-  height: 100%;
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  flex: 1 1 0%;
+  /* add nav height */
+  margin-bottom: 7rem;
 `;
 
 export const Title = styled.h1`

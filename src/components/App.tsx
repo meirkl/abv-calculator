@@ -7,12 +7,12 @@ import { AbvCalculatorPage, BrixConverterPage } from '../pages';
 const App: React.FC = () => (
   <Wrapper>
     <BrowserRouter basename="/abv-calculator">
+      <Tabs />
       <Switch>
         <Route path="/" exact component={AbvCalculatorPage} />
         <Route path="/converter" component={BrixConverterPage} />
         <Route render={() => <Redirect to="/" />} />
       </Switch>
-      <Tabs />
     </BrowserRouter>
   </Wrapper>
 );

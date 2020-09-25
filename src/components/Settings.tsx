@@ -87,7 +87,7 @@ const CheckBox = styled.div`
 
 const StyledSettingsCommon = css`
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 0;
   background-color: ${secondary.dark};
   border: 1px solid ${secondary.main};

@@ -27,6 +27,10 @@ const Tabs: React.FC = () => {
 };
 
 const StyledTabs = styled.nav`
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: ${dark.dark};
   padding-bottom: env(safe-area-inset-bottom);
   ul {
@@ -45,7 +49,7 @@ const Tab = styled.li<{ active: boolean }>`
     transform: ${props => (props.active ? 'scaleX(1)' : 'scaleX(0)')};
     transform-origin: ${props => props.active && '0% 50%'};
     transition: ${props =>
-      props.active ? 'transform 300ms ease-in' : 'transform 0ms ease-out'};
+      props.active ? 'transform 0.3s ease-in' : 'transform 0s ease-out'};
   }
 `;
 
@@ -53,7 +57,7 @@ const StyledNavLink = styled(NavLink)`
   color: inherit;
   text-decoration: none;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   display: block;
   padding-bottom: 0.3rem;
@@ -63,7 +67,8 @@ const StyledNavLink = styled(NavLink)`
   }
 
   div:first-of-type {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: bold;
   }
 `;
 
