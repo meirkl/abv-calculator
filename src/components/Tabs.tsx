@@ -45,7 +45,7 @@ const Tab = styled.li<{ active: boolean }>`
   :after {
     display: block;
     content: '';
-    border-bottom: solid 3px;
+    border-top: solid 3px;
     transform: ${props => (props.active ? 'scaleX(1)' : 'scaleX(0)')};
     transform-origin: ${props => props.active && '0% 50%'};
     transition: ${props =>
