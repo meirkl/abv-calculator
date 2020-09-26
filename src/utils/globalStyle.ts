@@ -9,12 +9,14 @@ export default createGlobalStyle`
 
     /* width */
     ::-webkit-scrollbar {
-      width: 3px !important;
+      width: 5px;
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: ${primary};
+      margin: 5px;
+      background-color: #999;
+      border-radius: 5px;
     }
   }
 

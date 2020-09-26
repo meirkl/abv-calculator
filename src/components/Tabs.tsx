@@ -29,6 +29,7 @@ const Tabs: React.FC = () => {
 const StyledTabs = styled.nav`
   overflow: hidden;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   width: 100%;
   background-color: ${dark.dark};
@@ -42,14 +43,13 @@ const Tab = styled.li<{ active: boolean }>`
   display: inline-block;
   width: 50%;
 
-  :after {
+  :before {
     display: block;
+    position: absolute;
+    top: 0;
+    width: 50%;
     content: '';
-    border-top: solid 3px;
-    transform: ${props => (props.active ? 'scaleX(1)' : 'scaleX(0)')};
-    transform-origin: ${props => props.active && '0% 50%'};
-    transition: ${props =>
-      props.active ? 'transform 0.3s ease-in' : 'transform 0s ease-out'};
+    border-top: ${props => (props.active ? 'solid 3px' : 'solid 0')};
   }
 `;
 
