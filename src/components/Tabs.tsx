@@ -6,17 +6,35 @@ import { dark, light } from '../constants/colors';
 const Tabs: React.FC = () => {
   const { pathname } = useLocation();
 
+  const disableActive = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    currentPathname: string,
+  ) => {
+    if (pathname === currentPathname) {
+      e.preventDefault();
+    }
+  };
+
   return (
     <StyledTabs>
       <ul>
         <Tab active={pathname.endsWith('/')}>
-          <StyledNavLink to="/" exact activeClassName="active">
+          <StyledNavLink
+            to="/"
+            exact
+            activeClassName="active"
+            onClick={e => disableActive(e, '/')}
+          >
             <div>%</div>
             <div>ABV Calculator</div>
           </StyledNavLink>
         </Tab>
         <Tab active={pathname.endsWith('/converter')}>
-          <StyledNavLink to="/converter" activeClassName="active">
+          <StyledNavLink
+            to="/converter"
+            activeClassName="active"
+            onClick={e => disableActive(e, '/converter')}
+          >
             <div>⇄</div>
             <div>Brix Converter</div>
           </StyledNavLink>
