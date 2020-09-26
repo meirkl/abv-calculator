@@ -1,6 +1,6 @@
 import React from 'react';
 import Spinner from '../components/Spinner';
-import { PageContent } from './Styles';
+import { CalculatorPageTransition, ConverterPageTransition } from './Styles';
 
 const AbvCalculator = React.lazy(() => import('./abv-calculator'));
 const BrixConverter = React.lazy(() => import('./brix-converter'));
@@ -11,16 +11,16 @@ const Page: React.FC = props => (
 
 export const AbvCalculatorPage: React.FC = () => (
   <Page>
-    <PageContent>
+    <CalculatorPageTransition>
       <AbvCalculator />
-    </PageContent>
+    </CalculatorPageTransition>
   </Page>
 );
 
 export const BrixConverterPage: React.FC = () => (
   <Page>
-    <PageContent>
+    <ConverterPageTransition>
       <BrixConverter />
-    </PageContent>
+    </ConverterPageTransition>
   </Page>
 );

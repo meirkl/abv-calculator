@@ -1,32 +1,33 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import Tabs from './Tabs';
 import { AbvCalculatorPage, BrixConverterPage } from '../pages';
+import Tabs from './Tabs';
 
 const App: React.FC = () => (
-  <Wrapper>
-    <BrowserRouter basename="/abv-calculator">
-      <Tabs />
-      <Switch>
-        <Route path="/" exact component={AbvCalculatorPage} />
-        <Route path="/converter" component={BrixConverterPage} />
-        <Route render={() => <Redirect to="/" />} />
-      </Switch>
-    </BrowserRouter>
-  </Wrapper>
+  <BrowserRouter basename="/abv-calculator">
+    <Tabs />
+    <Route
+      render={({ location }) => (
+        <TransitionGroup component={Container}>
+          <CSSTransition timeout={1000} classNames="page" key={location?.key}>
+            <Switch location={location}>
+              <Route path="/" exact component={AbvCalculatorPage} />
+              <Route path="/converter" component={BrixConverterPage} />
+              <Route render={() => <Redirect to="/" />} />
+            </Switch>
+          </CSSTransition>
+        </TransitionGroup>
+      )}
+    />
+  </BrowserRouter>
 );
 
-export const Wrapper = styled.div`
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
+const Container = styled.div`
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 `;
 
 export default App;

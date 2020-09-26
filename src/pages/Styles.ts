@@ -1,4 +1,26 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const slideInLeft = keyframes`
+  from {
+    transform: translate(-100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+`;
+
+const slideInRight = keyframes`
+  from {
+    transform: translate(100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate(0, 0);
+  }
+`;
 
 export const PageContent = styled.main`
   display: flex;
@@ -6,6 +28,24 @@ export const PageContent = styled.main`
   align-items: center;
   /* add nav height */
   margin-bottom: 7rem;
+`;
+
+export const CalculatorPageTransition = styled(PageContent)`
+  &.page-enter {
+    animation: ${slideInLeft} 0.3s forwards;
+  }
+  &.page-exit {
+    display: none;
+  }
+`;
+
+export const ConverterPageTransition = styled(PageContent)`
+  &.page-enter {
+    animation: ${slideInRight} 0.3s forwards;
+  }
+  &.page-exit {
+    display: none;
+  }
 `;
 
 export const Title = styled.h1`

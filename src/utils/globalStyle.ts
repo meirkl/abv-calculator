@@ -25,5 +25,6 @@ export default createGlobalStyle`
     background: ${dark.main};
     color: ${primary};
     font-size: 16px;
+    overflow-x: hidden;  
   }
 `;
