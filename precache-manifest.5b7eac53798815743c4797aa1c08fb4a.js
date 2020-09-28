@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13f60bb84ffcd8968c061e1acc04ff0d",
+    "revision": "9e63774fdb11cffe3958e09a84209fba",
     "url": "/abv-calculator/index.html"
   },
   {
-    "revision": "8f118912205e2242d720",
+    "revision": "da474f0a17f91d792edb",
     "url": "/abv-calculator/static/css/3.156fe21f.chunk.css"
   },
   {
@@ -16,28 +16,28 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abv-calculator/static/js/2.2bd1bb24.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8f118912205e2242d720",
-    "url": "/abv-calculator/static/js/3.087192e7.chunk.js"
+    "revision": "da474f0a17f91d792edb",
+    "url": "/abv-calculator/static/js/3.995a9da7.chunk.js"
   },
   {
     "revision": "275fe79abee3b697f1673c8bd9c58856",
-    "url": "/abv-calculator/static/js/3.087192e7.chunk.js.LICENSE.txt"
+    "url": "/abv-calculator/static/js/3.995a9da7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2774215386e0d88390ff",
-    "url": "/abv-calculator/static/js/4.12d25e23.chunk.js"
+    "revision": "86cdcac390ee6fb8d2ca",
+    "url": "/abv-calculator/static/js/4.d3f7c62b.chunk.js"
   },
   {
-    "revision": "bbac0a29d27b11cc3455",
-    "url": "/abv-calculator/static/js/5.cce768a7.chunk.js"
+    "revision": "77ccb7650fa8700d4c04",
+    "url": "/abv-calculator/static/js/5.d8f51b15.chunk.js"
   },
   {
-    "revision": "25e859a36b5a6c7c1e17",
-    "url": "/abv-calculator/static/js/main.eecba7c0.chunk.js"
+    "revision": "9f93bdbca1365b2a2b3d",
+    "url": "/abv-calculator/static/js/main.035deb8a.chunk.js"
   },
   {
-    "revision": "8334ae9512cc78363c15",
-    "url": "/abv-calculator/static/js/runtime-main.c326f68a.js"
+    "revision": "58aa0b70d0284613dc0b",
+    "url": "/abv-calculator/static/js/runtime-main.a5ac6af1.js"
   },
   {
     "revision": "399b65d75a0bccefa9b64cd5c6157fa6",
