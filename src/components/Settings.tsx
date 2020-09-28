@@ -7,7 +7,7 @@ import { useOnClickOutside } from '../hooks/useOnClickOutside';
 const Settings: React.FC = () => {
   const wrapperRef = React.useRef(null);
 
-  const { equation, changeHandler } = useAbvEquationContext();
+  const { equationMode, changeHandler } = useAbvEquationContext();
   useOnClickOutside(wrapperRef, () => setShowSettings(false));
 
   const [showSettings, setShowSettings] = React.useState(false);
@@ -23,7 +23,7 @@ const Settings: React.FC = () => {
           <input
             id="standard"
             type="checkbox"
-            checked={equation === 'standard'}
+            checked={equationMode === 'standard'}
             onChange={changeHandler}
           />
           <span></span>
@@ -33,7 +33,7 @@ const Settings: React.FC = () => {
           <input
             id="alternate"
             type="checkbox"
-            checked={equation === 'alternate'}
+            checked={equationMode === 'alternate'}
             onChange={changeHandler}
           />
           <span></span>
