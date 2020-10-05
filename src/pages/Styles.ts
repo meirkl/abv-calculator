@@ -30,7 +30,7 @@ export const PageContent = styled.main`
   margin-bottom: 7rem;
 `;
 
-export const CalculatorPageTransition = styled(PageContent)`
+export const SlideLeftTransition = styled(PageContent)`
   &.page-enter {
     animation: ${slideInLeft} 0.3s forwards;
   }
@@ -39,7 +39,7 @@ export const CalculatorPageTransition = styled(PageContent)`
   }
 `;
 
-export const ConverterPageTransition = styled(PageContent)`
+export const SlideRightTransition = styled(PageContent)`
   &.page-enter {
     animation: ${slideInRight} 0.3s forwards;
   }

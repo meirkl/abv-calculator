@@ -26,6 +26,11 @@ const Tabs: React.FC = () => {
       icon: '⇄',
       text: 'Brix Converter',
     },
+    {
+      to: '/gravity-correction',
+      icon: 'cg',
+      text: 'Gravity Correction',
+    },
   ];
 
   return (

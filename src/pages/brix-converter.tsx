@@ -2,7 +2,7 @@ import React from 'react';
 import Converter from '../components/Converter';
 import { Title } from './Styles';
 
-const BrixConverter = () => (
+const BrixConverter: React.FC = () => (
   <>
     <Title>Brix Converter</Title>
     <Converter />
