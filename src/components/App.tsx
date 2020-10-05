@@ -27,7 +27,9 @@ const App: React.FC = () => (
 const Container = styled.div`
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 93vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 `;
 
 export default App;

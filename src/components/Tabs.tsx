@@ -15,30 +15,35 @@ const Tabs: React.FC = () => {
     }
   };
 
+  const tabs = [
+    {
+      to: '/',
+      icon: '%',
+      text: 'ABV Calculator',
+    },
+    {
+      to: '/converter',
+      icon: '⇄',
+      text: 'Brix Converter',
+    },
+  ];
+
   return (
     <StyledTabs>
       <ul>
-        <Tab active={pathname.endsWith('/')}>
-          <StyledNavLink
-            to="/"
-            exact
-            activeClassName="active"
-            onClick={e => disableActive(e, '/')}
-          >
-            <div>%</div>
-            <div>ABV Calculator</div>
-          </StyledNavLink>
-        </Tab>
-        <Tab active={pathname.endsWith('/converter')}>
-          <StyledNavLink
-            to="/converter"
-            activeClassName="active"
-            onClick={e => disableActive(e, '/converter')}
-          >
-            <div>⇄</div>
-            <div>Brix Converter</div>
-          </StyledNavLink>
-        </Tab>
+        {tabs.map(({ to, icon, text }) => (
+          <Tab active={pathname.endsWith(to)} key={text} tabs={tabs.length}>
+            <StyledNavLink
+              to={to}
+              exact
+              activeClassName="active"
+              onClick={e => disableActive(e, to)}
+            >
+              <div>{icon}</div>
+              <div>{text}</div>
+            </StyledNavLink>
+          </Tab>
+        ))}
       </ul>
     </StyledTabs>
   );
@@ -57,17 +62,18 @@ const StyledTabs = styled.nav`
   }
 `;
 
-const Tab = styled.li<{ active: boolean }>`
+const Tab = styled.li<{ active: boolean; tabs: number }>`
   display: inline-block;
-  width: 50%;
+  width: ${props => `${100 / props.tabs}%`};
+  padding: 4px 0;
 
   :before {
     display: block;
     position: absolute;
     top: 0;
-    width: 50%;
+    width: ${props => `${100 / props.tabs}%`};
     content: '';
-    border-top: ${props => (props.active ? 'solid 3px' : 'solid 0')};
+    border-top: ${props => (props.active ? 'solid 2px' : 'solid 0')};
   }
 `;
 
@@ -75,7 +81,7 @@ const StyledNavLink = styled(NavLink)`
   color: inherit;
   text-decoration: none;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.7rem;
 
   display: block;
   padding-bottom: 0.3rem;
@@ -85,7 +91,7 @@ const StyledNavLink = styled(NavLink)`
   }
 
   div:first-of-type {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
 `;
 
