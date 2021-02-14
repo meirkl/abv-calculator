@@ -1,0 +1,2 @@
+(this["webpackJsonpabv-calculator"]=this["webpackJsonpabv-calculator"]||[]).push([[6],{58:function(c,t,r){"use strict";r.r(t);r(0);var a=r(15),e=r(1);t.default=function(){return Object(e.jsx)(e.Fragment,{children:Object(e.jsx)(a.c,{children:"Gravity Correction"})})}}}]);
+//# sourceMappingURL=6.7f762f16.chunk.js.map
