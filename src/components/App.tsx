@@ -24,12 +24,15 @@ const App: React.FC = () => (
           <TransitionGroup component={Container}>
             <CSSTransition timeout={1000} classNames="page" key={location?.key}>
               <Switch location={location}>
-                <Route path="/" exact component={AbvCalculatorPage} />
-                <Route path="/converter" component={BrixConverterPage} />
-                <Route
-                  path="/gravity-correction"
-                  component={GravityCorrectionPage}
-                />
+                <Route path="/" exact>
+                  <AbvCalculatorPage />
+                </Route>
+                <Route path="/converter">
+                  <BrixConverterPage />
+                </Route>
+                <Route path="/gravity-correction">
+                  <GravityCorrectionPage />
+                </Route>
                 <Route render={() => <Redirect to="/" />} />
               </Switch>
             </CSSTransition>

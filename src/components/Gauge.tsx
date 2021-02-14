@@ -16,7 +16,6 @@ const Gauge: React.FC<Props> = React.memo(({ abv }) => {
 
   return (
     <GaugeChart
-      id="abv-gauge"
       style={{ height: '6.2rem', margin: '1rem 0' }}
       nrOfLevels={20}
       colors={[secondary.main, danger]}
